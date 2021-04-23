@@ -16,6 +16,7 @@ $(window).on("load" , function () {
     })
     $('.header__profile').on('click', () => {
         $('.header__profiles').toggleClass('active')
+        $('.header__arrow').toggleClass('header__arrow_active')
         if ($('.header__profiles').hasClass('active')) {
             $('.header__profiles').slideDown('fast')
         } else {
@@ -24,8 +25,7 @@ $(window).on("load" , function () {
     })
     $('.header__nick_other').each(function () {
         $(this).on('click', () => {
-            const text = $(this).text()
-            $('.header__nick_selected').text(text)
+            $('.header__nick_selected').text($(this).text())
         })
     })
     $('.header__burger').on('click', () => {
@@ -35,22 +35,12 @@ $(window).on("load" , function () {
         $('br').remove()
         if ($('.header__mobile').hasClass('active')) {
             setTimeout(function () {
-                $('.header__numbers').addClass('header__numbers_active')
-                $('.header__menu').addClass('header__menu_active')
-                $('.header__contact').addClass('header__contact_active')
-                $('.header__profile').addClass('header__profile_active')
+                $('.header').attr('id', 'active')
             }, 400)
         } else {
-            $('.header__numbers').removeClass('header__numbers_active')
-            $('.header__menu').removeClass('header__menu_active')
-            $('.header__contact').removeClass('header__contact_active')
-            $('.header__profile').removeClass('header__profile_active')
+            $('.header').removeAttr('id','active')
         }
     })
 
 })
-$('.header').removeClass('header_hidden')
-$('.banner').removeClass('banner_hidden')
-$('.popular').removeClass('popular_hidden')
-
 

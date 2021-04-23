@@ -1,5 +1,4 @@
 .header
-  transition-duration: .7s
   .container
     flex-direction: column
     .header__top
@@ -68,8 +67,6 @@
           &:hover
             path
               stroke: #FFFFFF
-            span
-              color: rgba(255, 255, 255, 0.4)
           .header__tel
             margin-right: 15.03px
             path
@@ -83,10 +80,6 @@
             font-size: 16px
             line-height: 100%
             color: #FFFFFF
-        .header__contact_active
-          opacity: 1
-          visibility: visible
-          transition-duration: 0.5s
         .header__search
           display: flex
           width: 100%
@@ -149,7 +142,7 @@
             cursor: pointer
             transition-duration: 0.2s
             &:hover
-              transform: scale(1.2)
+              transform: scale(1.1)
             span
               z-index: 1
               width: 18px
@@ -170,10 +163,6 @@
               line-height: 100%
               text-align: center
               color: #FFFFFF
-        .header__numbers_active
-          opacity: 1
-          visibility: visible
-          transition-duration: 0.5s
         .header__profile
           display: flex
           flex-direction: column
@@ -193,8 +182,6 @@
             align-items: center
             cursor: pointer
             &:hover
-              span
-                color: rgba(255, 255, 255, 0.4)
               .header__arrow
                 path
                   stroke: #FFFFFF
@@ -209,8 +196,13 @@
               margin: 0 10px 0 12px
               transition-duration: 0.5s
             .header__arrow
+              transition-duration: 0.5s
               path
                 transition-duration: 0.5s
+            .header__arrow_active
+              transform: rotateX(-180deg)
+              path
+                stroke: #FFFFFF
           .header__profiles
             position: absolute
             bottom: 0
@@ -239,10 +231,6 @@
                 margin-bottom: 10px
               &:hover
                 color: rgba(255, 255, 255, 0.4)
-        .header__profile_active
-          opacity: 1
-          visibility: visible
-          transition-duration: 0.5s
         .header__burger
           display: none
           flex-direction: column
@@ -303,7 +291,7 @@
             color: #FFFFFF
             margin: 0 auto
             &:hover
-              letter-spacing: 3px
+              letter-spacing: 1.5px
           &:last-child
             position: relative
             &:before
@@ -321,10 +309,6 @@
           &:not(:last-child)
             @media (max-width: 1024px)
               margin-bottom: 20px
-    .header__menu_active
-      opacity: 1
-      visibility: visible
-      transition-duration: 0.5s
     .header__mobile
       transition-duration: 0.4s
       transform: translateY(-100%)
@@ -339,8 +323,23 @@
     .active
       transform: translateY(0)
 
-.header_hidden
-  transform: translateY(-100%)
+#active
+  .header__contact
+    opacity: 1
+    visibility: visible
+    transition-duration: 0.5s
+  .header__numbers
+    opacity: 1
+    visibility: visible
+    transition-duration: 0.5s
+  .header__menu
+    opacity: 1
+    visibility: visible
+    transition-duration: 0.5s
+  .header__profile
+    opacity: 1
+    visibility: visible
+    transition-duration: 0.5s
 
 
 

@@ -1,7 +1,6 @@
 .banner
   background-color: #FFFFFF
   padding: 0 28px
-  transition-duration: .7s
   @media (max-width: 768px)
     padding: 0
   .container
@@ -132,16 +131,15 @@
         span
           width: 12px
           margin: 0 10px
-          transition-duration: 0.5s
           height: 12px
           background: none
           border: 1px solid #FFFFFF
           opacity: 1
           outline: none
-          &:hover
-            background-color: #FFFFFF
         .swiper-pagination-bullet-active
           width: 18px
+          transition-duration: 0.5s
+          margin: 0 4px 0 10px
           border-radius: 100px
           background-color: #FFFFFF
     .banner__prev, .banner__next
@@ -177,7 +175,5 @@
       right: 0
       top: 50%
       transform: translate(50%, -50%)
-.banner_hidden
-  transform: translateX(-100%)
 
 
