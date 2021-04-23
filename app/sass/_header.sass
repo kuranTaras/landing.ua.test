@@ -1,0 +1,350 @@
+.header
+  transition-duration: .7s
+  .container
+    flex-direction: column
+    .header__top
+      background: #252024
+      display: flex
+      padding: 0 20px
+      .header__content
+        display: flex
+        align-items: center
+        padding: 17px 24px 19px 0
+        width: 100%
+        max-width: 1372px
+        margin: 0 auto
+        @media (max-width: 1024px)
+          padding-right: 0
+        .header__logo
+          display: flex
+          flex-direction: column
+          @media (max-width: 1024px)
+            position: relative
+            z-index: 4
+          &:hover
+            span
+              color: rgba(255, 255, 255, 0.4)
+            p
+              color: #FFFFFF
+          h4
+            display: flex
+            span
+              transition-duration: 0.5s
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 300
+              font-size: 18px
+              line-height: 100%
+              letter-spacing: -0.02em
+              color: #FFFFFF
+              &:first-child
+                font-weight: 600
+          p
+            transition-duration: 0.5s
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 10px
+            margin-top: 8px
+            line-height: 100%
+            text-align: center
+            text-transform: uppercase
+            color: rgba(255, 255, 255, 0.4)
+        .header__contact
+          display: flex
+          align-items: center
+          cursor: pointer
+          margin-left: 70px
+          margin-right: 60px
+          @media (max-width: 1024px)
+            position: absolute
+            opacity: 0
+            visibility: hidden
+            z-index: 4
+            transform: translateX(-50%)
+            left: 50%
+            margin: 0
+            top: 404px
+          &:hover
+            path
+              stroke: #FFFFFF
+            span
+              color: rgba(255, 255, 255, 0.4)
+          .header__tel
+            margin-right: 15.03px
+            path
+              transition-duration: 0.5s
+          span
+            white-space: nowrap
+            transition-duration: 0.5s
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 100%
+            color: #FFFFFF
+        .header__contact_active
+          opacity: 1
+          visibility: visible
+          transition-duration: 0.5s
+        .header__search
+          display: flex
+          width: 100%
+          max-width: 460px
+          border: 0.5px solid #BDBDBD
+          border-radius: 4px
+          margin-right: 20px
+          min-width: 250px
+          @media (max-width: 1024px)
+            display: none
+          input
+            width: 90%
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 100%
+            color: #FFFFFF
+            background: none
+            border: none
+            outline: none
+            padding: 0 16px
+          button
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            outline: none
+            background: #FFFFFF
+            border: 0
+            width: 46px
+            height: 46px
+            transition-duration: 0.5s
+            path
+              transition-duration: 0.5s
+            &:hover
+              background-color: rgba(255, 255, 255, 0.4)
+              path
+                stroke: #FFFFFF
+        .header__numbers
+          display: flex
+          width: 100%
+          max-width: 98px
+          justify-content: space-between
+          margin-left: auto
+          @media (max-width: 1024px)
+            position: absolute
+            opacity: 0
+            visibility: hidden
+            z-index: 4
+            margin: 0
+            top: 25px
+            right: 80px
+            max-width: 80px
+          @media (max-width: 375px)
+            max-width: 65px
+            right: 65px
+          div
+            position: relative
+            cursor: pointer
+            transition-duration: 0.2s
+            &:hover
+              transform: scale(1.2)
+            span
+              z-index: 1
+              width: 18px
+              height: 16px
+              display: flex
+              align-items: center
+              justify-content: center
+              position: absolute
+              right: -9px
+              top: -8px
+              background: #C2185B
+              box-shadow: 0 4px 10px rgba(194, 24, 91, 0.2)
+              border-radius: 4px
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 10px
+              line-height: 100%
+              text-align: center
+              color: #FFFFFF
+        .header__numbers_active
+          opacity: 1
+          visibility: visible
+          transition-duration: 0.5s
+        .header__profile
+          display: flex
+          flex-direction: column
+          position: relative
+          margin-left: 41px
+          @media (max-width: 1024px)
+            position: absolute
+            z-index: 4
+            transform: translateX(-50%)
+            left: 50%
+            margin: 0
+            opacity: 0
+            visibility: hidden
+            top: 448px
+          .header__selected
+            display: flex
+            align-items: center
+            cursor: pointer
+            &:hover
+              span
+                color: rgba(255, 255, 255, 0.4)
+              .header__arrow
+                path
+                  stroke: #FFFFFF
+            span
+              white-space: nowrap
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 300
+              font-size: 16px
+              line-height: 100%
+              color: #FFFFFF
+              margin: 0 10px 0 12px
+              transition-duration: 0.5s
+            .header__arrow
+              path
+                transition-duration: 0.5s
+          .header__profiles
+            position: absolute
+            bottom: 0
+            z-index: 2
+            transform: translateY(100%)
+            display: none
+            flex-direction: column
+            background-color: #252024
+            width: 100%
+            border: 1px solid #FFFFFF
+            border-top: 0
+            border-radius: 0 0 4px 4px
+            box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1)
+            padding: 10px
+            span
+              display: block
+              transition-duration: 0.5s
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 300
+              font-size: 16px
+              line-height: 100%
+              color: #FFFFFF
+              cursor: pointer
+              &:not(:last-child)
+                margin-bottom: 10px
+              &:hover
+                color: rgba(255, 255, 255, 0.4)
+        .header__profile_active
+          opacity: 1
+          visibility: visible
+          transition-duration: 0.5s
+        .header__burger
+          display: none
+          flex-direction: column
+          justify-content: space-between
+          width: 30px
+          height: 25px
+          margin-left: auto
+          cursor: pointer
+          position: relative
+          z-index: 4
+          transition-duration: 0.4s
+          @media (max-width: 1024px)
+            display: flex
+          div
+            width: 100%
+            height: 3px
+            background-color: #FFFFFF
+        .header__burger_active
+          transform: rotate(-90deg)
+    .header__menu
+      display: flex
+      background-color: #FFFFFF
+      border-bottom: 0.5px solid #BDBDBD
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04)
+      padding: 0 20px
+      @media (max-width: 1024px)
+        position: absolute
+        opacity: 0
+        visibility: hidden
+        z-index: 4
+        background-color: inherit
+        border-bottom: 0
+        box-shadow: none
+        width: 100%
+        top: 80px
+        left: 0
+        padding: 0
+      .header__content
+        max-width: 1365px
+        width: 100%
+        margin: 0 auto
+        padding: 16px 7px 18px 0
+        display: flex
+        justify-content: space-between
+        @media (max-width: 1024px)
+          flex-direction: column
+          padding: 0
+        a
+          text-align: center
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 120%
+          color: #212121
+          transition-duration: 0.3s
+          @media (max-width: 1024px)
+            color: #FFFFFF
+            margin: 0 auto
+            &:hover
+              letter-spacing: 3px
+          &:last-child
+            position: relative
+            &:before
+              content: ''
+              top: 50%
+              transition-duration: 0.3s
+              left: -6px
+              transform: translate(-100%, -50%)
+              position: absolute
+              width: 20px
+              height: 20px
+              background: url("../img/header/01.png")
+          &:hover
+            color: silver
+          &:not(:last-child)
+            @media (max-width: 1024px)
+              margin-bottom: 20px
+    .header__menu_active
+      opacity: 1
+      visibility: visible
+      transition-duration: 0.5s
+    .header__mobile
+      transition-duration: 0.4s
+      transform: translateY(-100%)
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 3
+      padding: 0 20px
+      width: 100vw
+      height: 100vh
+      background-color: #252024
+    .active
+      transform: translateY(0)
+
+.header_hidden
+  transform: translateY(-100%)
+
+
+
+
+
+
+
