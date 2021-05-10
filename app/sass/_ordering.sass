@@ -866,6 +866,7 @@
 
               @media (max-width: 1024px)
                 display: block
+                margin-left: auto
         .ordering__prices
           display: flex
           flex-direction: column
@@ -882,6 +883,9 @@
             height: 0.5px
             background: #BDBDBD
             left: -40px
+            @media (max-width: 1024px)
+              width: calc(100% + 28px)
+              left: -14px
           .ordering__price
             display: flex
             justify-content: space-between
