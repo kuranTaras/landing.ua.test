@@ -739,10 +739,10 @@ $(window).on("load" , function () {
     })
 
     $('.years-button').on('click', () => {
-        $('.years').addClass('years-hide')
+        $('.years').removeClass('years-hide')
     })
     $('.cookie-button').on('click', () => {
-        $('.cookie').addClass('cookie-hide')
+        $('.cookie').removeClass('cookie-hide')
     })
     $('.enter-policy').on('click', () => {
         $('.policy').addClass('popup_active')
