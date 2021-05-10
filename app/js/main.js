@@ -737,6 +737,23 @@ $(window).on("load" , function () {
     $('.remove-mobile-filters').on('click', () => {
         $('.search__filters').removeClass('search__filters-mobile_active')
     })
+
+    $('.years-button').on('click', () => {
+        $('.years').addClass('years-hide')
+    })
+    $('.cookie-button').on('click', () => {
+        $('.cookie').addClass('cookie-hide')
+    })
+    $('.enter-policy').on('click', () => {
+        $('.policy').addClass('popup_active')
+    })
+    $('.enter-contract').on('click', () => {
+        $('.contract').addClass('popup_active')
+    })
+    $('.popup-close').on('click', () => {
+        $('.policy').removeClass('popup_active')
+        $('.contract').removeClass('popup_active')
+    })
 })
 
 

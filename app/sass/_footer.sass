@@ -49,6 +49,7 @@
         font-size: 18px
         line-height: 240%
         color: #FFFFFF
+        display: block
       .footer__links
         display: flex
         flex-direction: column
@@ -81,6 +82,20 @@
             @media (max-width: 1024px)
               left: auto
               right: -30px
+      .footer__column-texts
+        display: flex
+        flex-direction: column
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 400
+          font-size: 16px
+          line-height: 240%
+          color: #9E9E9E
+          cursor: pointer
+          transition-duration: 0.3s
+          &:hover
+            color: #1976D2
     .footer__plus
       @media (max-width: 1024px)
         margin: 42px 0 40px 0
