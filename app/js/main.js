@@ -755,7 +755,7 @@ $(window).on("load" , function () {
         $('.contract').removeClass('popup_active')
     })
     if (!window.localStorage.getItem('preloaderIsShown')) {
-        $('.years').addClass('years-hide')
+        $('.years').removeClass('years-hide')
         window.localStorage.setItem('preloaderIsShown', true);
     } else {
         $('.years').addClass('years-display')
@@ -768,9 +768,14 @@ $(window).on("load" , function () {
         $('.cookie').addClass('cookie-display')
     }
     setTimeout(function () {
-        $('.cookie').addClass('cookie-hide')
-    }, 1000)
 
+    })
+    setTimeout(function () {
+        $('.cookie').addClass('cookie-hide')
+    }, 500)
+    setTimeout(function () {
+        $('.years').addClass('years-hide')
+    }, 500)
 })
 
 
