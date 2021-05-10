@@ -755,18 +755,22 @@ $(window).on("load" , function () {
         $('.contract').removeClass('popup_active')
     })
     if (!window.localStorage.getItem('preloaderIsShown')) {
-        $('.years').removeClass('years-hide')
+        $('.years').addClass('years-hide')
         window.localStorage.setItem('preloaderIsShown', true);
     } else {
-        $('.years').css('display', 'none')
+        $('.years').addClass('years-display')
     }
 
     if (!window.localStorage.getItem('cookie')) {
-        $('.cookie').removeClass('cookie-hide')
+        $('.cookie').addClass('cookie-hide')
         window.localStorage.setItem('cookie', true);
     } else {
-        $('.cookie').css('display', 'none')
+        $('.cookie').addClass('cookie-display')
     }
+    setTimeout(function () {
+        $('.cookie').addClass('cookie-hide')
+    }, 1000)
+
 })
 
 
