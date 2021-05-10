@@ -1,10 +1,16 @@
 .header
+  position: relative
   .container
     flex-direction: column
+    @media (max-width: 1024px)
+      padding-bottom: 86px
+      position: relative
     .header__top
       background: #252024
       display: flex
       padding: 0 20px
+      @media (max-width: 1024px)
+        padding: 0 14px
       .header__content
         display: flex
         align-items: center
@@ -13,18 +19,15 @@
         max-width: 1372px
         margin: 0 auto
         @media (max-width: 1024px)
-          padding-right: 0
+          padding-right: 10px
         .header__logo
           display: flex
           flex-direction: column
-          @media (max-width: 1024px)
-            position: relative
-            z-index: 4
           &:hover
             span
-              color: rgba(255, 255, 255, 0.4)
+              color: #1976D2
             p
-              color: #FFFFFF
+              color: #1976D2
           h4
             display: flex
             span
@@ -56,24 +59,19 @@
           margin-left: 70px
           margin-right: 60px
           @media (max-width: 1024px)
-            position: absolute
-            opacity: 0
-            visibility: hidden
-            z-index: 4
-            transform: translateX(-50%)
-            left: 50%
-            margin: 0
-            top: 404px
+            display: none
           &:hover
             path
-              stroke: #FFFFFF
+              stroke: #1976D2
+            span
+              color: #1976D2
           .header__tel
             margin-right: 15.03px
             path
-              transition-duration: 0.5s
+              transition-duration: 0.3s
           span
             white-space: nowrap
-            transition-duration: 0.5s
+            transition-duration: 0.3s
             font-family: Proxima Nova, sans-serif
             font-style: normal
             font-weight: normal
@@ -82,16 +80,22 @@
             color: #FFFFFF
         .header__search
           display: flex
+          position: relative
           width: 100%
           max-width: 460px
-          border: 0.5px solid #BDBDBD
-          border-radius: 4px
           margin-right: 20px
           min-width: 250px
           @media (max-width: 1024px)
             display: none
+          &:hover
+            input
+              border-color: #FFFFFF
           input
+            transition-duration: 0.3s
             width: 90%
+            z-index: 120
+            border: 0.5px solid #BDBDBD
+            border-radius: 4px 0 0 4px
             font-family: Proxima Nova, sans-serif
             font-style: normal
             font-weight: 300
@@ -99,26 +103,148 @@
             line-height: 100%
             color: #FFFFFF
             background: none
-            border: none
+            border-right: none
             outline: none
             padding: 0 16px
-          button
+          .header__button
             display: flex
             align-items: center
             justify-content: center
             cursor: pointer
             outline: none
+            border-radius: 0 4px 4px 0
             background: #FFFFFF
             border: 0
+            z-index: 5
             width: 46px
             height: 46px
-            transition-duration: 0.5s
+            transition-duration: 0.3s
             path
-              transition-duration: 0.5s
+              transition-duration: 0.3s
+          .header__search-down
+            opacity: 0
+            border-radius: 0 0 4px 4px
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2)
+            visibility: hidden
+            position: absolute
+            bottom: 0
+            transform: translateY(100%)
+            background-color: #FFFFFF
+            width: 100%
+            display: flex
+            flex-direction: column
+            left: 0
+            padding: 6px 20px 24.5px 20px
+            z-index: 101
+            .header__down-products
+              display: flex
+              flex-direction: column
+              max-height: 362px
+              overflow: auto
+              .header__down-product
+                margin-right: 30px
+                display: flex
+                padding: 14px 0
+                justify-content: space-between
+                border-bottom: 0.5px solid #BDBDBD
+                &:hover
+                  .header__down-text
+                    p
+                      color: #1976D2
+                img
+                  width: 70px
+                  height: 60px
+                  margin-right: 20px
+                  object-fit: contain
+                  border-radius: 4px
+                .header__down-text
+                  display: flex
+                  flex-direction: column
+                  justify-content: center
+                  width: 100%
+                  max-width: 190px
+                  p, span
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 130%
+                    color: #000000
+                    transition-duration: 0.3s
+                  span
+                    font-style: italic
+                    color: #757575
+                .header__down-price
+                  display: flex
+                  flex-direction: column
+                  align-items: flex-end
+                  justify-content: center
+                  p
+                    &:first-child
+                      span
+                        font-family: Proxima Nova, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 100%
+                        text-align: right
+                        color: #212121
+                        &:last-child
+                          font-weight: 300
+                    &:last-child
+                      span
+                        font-family: Proxima Nova, sans-serif
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 18px
+                        line-height: 100%
+                        text-align: right
+                        color: #212121
+                        &:first-child
+                          font-weight: 700
+                    &:not(:last-child)
+                      position: relative
+                      &:after
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 0.5px
+                        background-color: #212121
+                        left: 0
+                        top: 10px
+            .header__down-more
+              display: flex
+              align-items: center
+              margin-top: 20.5px
+              margin-right: auto
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 100%
+                color: #1976D2
+                margin-right: 12.5px
+        .header__search_active
+          &:hover
+            input
+              border-color: #757575
+          .header__button
+            background-color: #C2185B
             &:hover
-              background-color: rgba(255, 255, 255, 0.4)
-              path
-                stroke: #FFFFFF
+              background-color: #880E4F
+            path
+              stroke: #FFFFFF
+          input
+            background-color: #FFFFFF
+            color: #616161
+            border: none
+            border-bottom: 0.5px solid #757575
+            &:hover
+              background-color: #FAFAFA
+          .header__search-down
+            opacity: 1
+            visibility: visible
         .header__numbers
           display: flex
           width: 100%
@@ -126,23 +252,21 @@
           justify-content: space-between
           margin-left: auto
           @media (max-width: 1024px)
-            position: absolute
-            opacity: 0
-            visibility: hidden
-            z-index: 4
-            margin: 0
-            top: 25px
-            right: 80px
-            max-width: 80px
-          @media (max-width: 375px)
-            max-width: 65px
-            right: 65px
+            max-width: 78px
           div
             position: relative
             cursor: pointer
             transition-duration: 0.2s
             &:hover
-              transform: scale(1.1)
+              svg
+                path
+                  &:last-child
+                    stroke: #1976D2
+                  &:not(:last-child)
+                    fill: #1976D2
+            svg
+              path
+                transition-duration: 0.3s
             span
               z-index: 1
               width: 18px
@@ -169,22 +293,21 @@
           position: relative
           margin-left: 41px
           @media (max-width: 1024px)
-            position: absolute
-            z-index: 4
-            transform: translateX(-50%)
-            left: 50%
-            margin: 0
-            opacity: 0
-            visibility: hidden
-            top: 448px
+            display: none
           .header__selected
-            display: flex
+            display: none
             align-items: center
             cursor: pointer
             &:hover
+              .header__profile-img
+                svg
+                  path
+                    stroke: #1976D2
               .header__arrow
                 path
-                  stroke: #FFFFFF
+                  stroke: #1976D2
+              span
+                color: #1976D2
             span
               white-space: nowrap
               font-family: Proxima Nova, sans-serif
@@ -194,62 +317,118 @@
               line-height: 100%
               color: #FFFFFF
               margin: 0 10px 0 12px
-              transition-duration: 0.5s
+              transition-duration: 0.3s
             .header__arrow
-              transition-duration: 0.5s
+              transition-duration: 0.3s
               path
-                transition-duration: 0.5s
+                transition-duration: 0.3s
             .header__arrow_active
               transform: rotateX(-180deg)
               path
                 stroke: #FFFFFF
-          .header__profiles
-            position: absolute
-            bottom: 0
-            z-index: 2
-            transform: translateY(100%)
+            .header__profile-img
+              svg
+                path
+                  transition-duration: 0.3s
+          .header__logout
+            align-items: center
             display: none
-            flex-direction: column
-            background-color: #252024
-            width: 100%
-            border: 1px solid #FFFFFF
-            border-top: 0
-            border-radius: 0 0 4px 4px
-            box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1)
-            padding: 10px
+            cursor: pointer
+            &:hover
+              span
+                color: #1976D2
+              path
+                stroke: #1976D2
+            svg
+              path
+                transition-duration: 0.3s
             span
-              display: block
-              transition-duration: 0.5s
+              margin-left: 15px
               font-family: Proxima Nova, sans-serif
               font-style: normal
               font-weight: 300
               font-size: 16px
               line-height: 100%
               color: #FFFFFF
-              cursor: pointer
-              &:not(:last-child)
-                margin-bottom: 10px
-              &:hover
-                color: rgba(255, 255, 255, 0.4)
+              transition-duration: 0.3s
+          .header__profile-log
+            display: flex
+          .header__profile_down
+            position: absolute
+            opacity: 0
+            visibility: hidden
+            transition-duration: 0.3s
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2)
+            bottom: -5px
+            right: -26px
+            transform: translateY(100%)
+            border-radius: 10px
+            background-color: #FFFFFF
+            display: flex
+            padding: 30px
+            z-index: 101
+            width: 100vw
+            max-width: 240px
+            .header__profile-links
+              display: flex
+              flex-direction: column
+              width: 100%
+              a
+                display: flex
+                &:not(:last-child)
+                  margin-right: auto
+                  &:hover
+                    span
+                      &:not(:nth-child(2))
+                        color: #1976D2
+                &:first-child, &:nth-child(2)
+                  margin-bottom: 28px
+                &:nth-child(3)
+                  margin-bottom: 25px
+                &:last-child
+                  margin-top: 25px
+                  position: relative
+                  &:hover
+                    span
+                      color: #212121
+                  &:before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    top: -25px
+                    background-color: #BDBDBD
+                    width: 100%
+                    height: 1px
+                  span
+                    color: #D32F2F
+                span
+                  transition-duration: 0.3s
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 16px
+                  line-height: 100%
+                  color: #212121
+                  &:nth-child(2)
+                    font-weight: 600
+                    margin-left: 3px
+                    color: #C2185B
+            img
+              position: absolute
+              top: 0
+              left: 0
+          .header__profile_active
+            opacity: 1
+            visibility: visible
         .header__burger
           display: none
-          flex-direction: column
-          justify-content: space-between
-          width: 30px
-          height: 25px
-          margin-left: auto
-          cursor: pointer
-          position: relative
-          z-index: 4
-          transition-duration: 0.4s
+          margin-right: 30px
           @media (max-width: 1024px)
-            display: flex
-          div
-            width: 100%
-            height: 3px
-            background-color: #FFFFFF
-        .header__burger_active
-          transform: rotate(-90deg)
+            display: block
+          .header__burger-closed
+            display: block
+          .header__burger-open
+            display: none
     .header__menu
       display: flex
       background-color: #FFFFFF
@@ -257,89 +436,387 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04)
       padding: 0 20px
       @media (max-width: 1024px)
-        position: absolute
-        opacity: 0
-        visibility: hidden
-        z-index: 4
-        background-color: inherit
-        border-bottom: 0
-        box-shadow: none
-        width: 100%
-        top: 80px
-        left: 0
-        padding: 0
+        display: none
       .header__content
-        max-width: 1365px
+        max-width: 1372px
         width: 100%
         margin: 0 auto
-        padding: 16px 7px 18px 0
         display: flex
+        position: relative
         justify-content: space-between
-        @media (max-width: 1024px)
-          flex-direction: column
-          padding: 0
-        a
-          text-align: center
+        .header__menu-link
+          display: flex
+          width: 100%
+          justify-content: center
+          &:hover
+            .header__menu-down
+              opacity: 1
+              visibility: visible
+          &:last-child
+            .header__menu-top
+              font-weight: 600
+              position: relative
+              &:before
+                content: ''
+                position: absolute
+                width: 20px
+                height: 20px
+                background: url("../img/header/01.png")
+                left: 15px
+                transform: translateY(-50%)
+                top: 50%
+          .header__menu-top
+            display: flex
+            position: relative
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 120%
+            text-align: center
+            color: #212121
+            padding: 16px 0 18px 0
+            cursor: pointer
+            width: 100%
+            justify-content: center
+            transition-duration: 0.3s
+            &:hover
+              color: #C2185B
+              font-weight: 600
+              background-color: #F5F5F5
+          .header__menu-down
+            position: absolute
+            bottom: -1px
+            visibility: hidden
+            opacity: 0
+            display: flex
+            justify-content: space-between
+            padding: 40px 40px 60px 40px
+            z-index: 100
+            background-color: #FFFFFF
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1)
+            border-radius: 0 0 20px 20px
+            width: 100vw
+            max-width: 1372px
+            left: 50%
+            transform: translate(-50%, 100%)
+            .header__menu-down-column
+              display: flex
+              flex-direction: column
+              span
+                padding: 16px 19px
+                background-color: #FFFFFF
+                border: 1px solid #AD1457
+                border-radius: 6px
+                cursor: pointer
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                text-align: center
+                color: #AD1457
+                transition-duration: 0.3s
+                &:not(:last-child)
+                  margin-bottom: 12px
+                &:hover
+                  color: #AD1457
+                  background-color: #FCE4EC
+              .header__menu-kind_active
+                background-color: #AD1457
+                color: #FFFFFF
+              h4
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 240%
+                margin-top: -14px
+                color: #212121
+              .header__menu-down-links
+                display: flex
+                flex-direction: column
+                a
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: 400
+                  font-size: 16px
+                  line-height: 240%
+                  color: #212121
+                  transition-duration: 0.3s
+                  &:hover
+                    color: #1976D2
+              .header_menu-down-banner-container
+                display: flex
+                position: relative
+                width: 100vw
+                max-width: 260px
+                height: 280px
+                border-radius: 10px
+                &:hover
+                  .header__menu-opacity
+                    background: rgba(0, 0, 0, 0.2)
+                img
+                  width: 100%
+                  height: 100%
+                  object-fit: cover
+                  border-radius: 10px
+                h3
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 24px
+                  line-height: 100%
+                  color: #FFFFFF
+                  position: absolute
+                  top: 30px
+                  z-index: 3
+                  left: 30px
+                .header__menu-gradient
+                  position: absolute
+                  transition-duration: 0.5s
+                  background: linear-gradient(135.27deg, #000000 0%, rgba(0, 0, 0, 0) 60.41%)
+                  width: 100%
+                  height: 100%
+                  border-radius: 10px
+                  z-index: 1
+                .header__menu-opacity
+                  position: absolute
+                  width: 100%
+                  transition-duration: 0.3s
+                  height: 100%
+                  top: 0
+                  left: 0
+                  border-radius: 10px
+                  z-index: 2
+            .header__menu-down-aging
+              display: none
+            .header__menu-down-aging-active
+              display: flex
+            .header__menu-down-kind
+              display: none
+            .header__menu-down-kind-active
+              display: flex
+          .header__menu-down_active
+            opacity: 1
+            visibility: visible
+    .header__mobile
+      display: none
+      @media (max-width: 1024px)
+        display: none
+  .container-mobile_active
+    @media (max-width: 1024px)
+      position: fixed
+      padding-bottom: 0
+      height: 100%
+      overflow: auto
+      min-height: 100vh
+      background: #FFFFFF
+      top: 0
+      left: 0
+      z-index: 200
+    .header__top
+      .header__content
+        .header__search
+          @media (max-width: 1024px)
+            display: none
+        .header__burger
+          .header__burger-closed
+            display: none
+          .header__burger-open
+            display: block
+    .header__mobile
+      display: none
+      flex-direction: column
+      height: 100%
+      @media (max-width: 1024px)
+        display: flex
+      .header__mobile-without
+        height: 100%
+        display: flex
+        flex-direction: column
+      .header__mobile-profile-log
+        display: flex
+        flex-direction: column
+        background: #F5F5F5
+        .header__mobile-profile-top
+          width: 100%
+          display: flex
+          padding: 26px 14px
+          align-items: center
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 18px
+            line-height: 100%
+            color: #212121
+            margin: 0 auto 0 14px
+          svg
+            transition-duration: 0.5s
+        .header__mobile-profile-bottom
+          display: none
+          padding: 4px 14px 30px 14px
+          p
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 100%
+            color: #212121
+            &:not(:last-child)
+              margin-bottom: 28px
+            &:last-child
+              padding-top: 25px
+              color: #D32F2F
+              border-top: 0.5px solid #BDBDBD
+            span
+              font-weight: 600
+              color: #AD1457
+      .header__mobile-profile-logout
+        display: none
+        padding: 26px 14px
+        align-items: center
+        background: #F5F5F5
+        span
           font-family: Proxima Nova, sans-serif
           font-style: normal
           font-weight: normal
-          font-size: 14px
-          line-height: 120%
+          font-size: 18px
+          line-height: 100%
           color: #212121
-          transition-duration: 0.3s
-          @media (max-width: 1024px)
+          margin-left: 14px
+      .header__mobile-min-menu
+        display: flex
+        flex-direction: column
+        padding: 30px 14px 40px 14px
+        border-top: 0.5px solid #BDBDBD
+        .enter-catalog
+          display: flex
+          justify-content: space-between
+          padding: 20px
+          background: #AD1457
+          border: 1px solid #AD1457
+          border-radius: 6px
+          align-items: center
+          margin-bottom: 30px
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 100%
+            text-align: center
             color: #FFFFFF
-            margin: 0 auto
-            &:hover
-              letter-spacing: 1.5px
-          &:last-child
-            position: relative
-            &:before
-              content: ''
-              top: 50%
-              transition-duration: 0.3s
-              left: -6px
-              transform: translate(-100%, -50%)
-              position: absolute
-              width: 20px
-              height: 20px
-              background: url("../img/header/01.png")
-          &:hover
-            color: silver
-          &:not(:last-child)
-            @media (max-width: 1024px)
+        .header__mobile-min-menu-links
+          display: flex
+          flex-direction: column
+          a
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 100%
+            color: #212121
+            &:not(:last-child)
+              margin-bottom: 32px
+      .header__mobile-contacts
+        display: flex
+        flex-direction: column
+        background: #F5F5F5
+        padding: 40px 14px 30px 14px
+        margin-top: auto
+        border-top: 0.5px solid #BDBDBD
+        .header__mobile-contact-all
+          display: flex
+          flex-direction: column
+          margin-bottom: 30px
+          .header__mobile-contact
+            display: flex
+            align-items: center
+            &:not(:last-child)
               margin-bottom: 20px
-    .header__mobile
-      transition-duration: 0.4s
-      transform: translateY(-100%)
-      position: absolute
-      top: 0
-      left: 0
-      z-index: 3
-      padding: 0 20px
-      width: 100vw
-      height: 100vh
-      background-color: #252024
-    .active
-      transform: translateY(0)
+            span
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 100%
+              color: #757575
+              margin-left: 20px
+        .header__mobile-social
+          display: flex
+          a
+            width: 36px
+            height: 36px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            &:first-child
+              background: #E2389E
+            &:nth-child(2)
+              background: #2EAEE4
+            &:last-child
+              background: #1668B4
+            &:not(:last-child)
+              margin-right: 20px
+      .header__mobile-profile_active
+        .header__mobile-profile-top
+          .header__mobile-arrow
+            transform: rotateX(180deg)
+      .header__mobile-catalog
+        display: none
+        padding: 20px 14px 60px 14px
+        h2
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 22px
+          line-height: 100%
+          color: #212121
+          margin: 20px 0 30px 0
+        .header__mobile-catalog-all
+          display: flex
+          flex-direction: column
+          .header__mobile-catalog-item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 40px 20px
+            background: #F5F5F5
+            border-radius: 10px
+            &:not(:last-child)
+              margin-bottom: 6px
+            &:last-child
+              span
+                font-weight: 600
+            span
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 18px
+              line-height: 100%
+              color: #212121
+    .header__mobile-catalog-open
+      .header__mobile-without
+        display: none
+      .header__mobile-catalog
+        display: block
+    .header__mobile-logout
+      .header__mobile-profile-logout
+        display: flex
+      .header__mobile-profile-log
+        display: none
+  .header__scroll
+    position: absolute
+    top: 0
+    left: 0
 
-#active
-  .header__contact
-    opacity: 1
-    visibility: visible
-    transition-duration: 0.5s
-  .header__numbers
-    opacity: 1
-    visibility: visible
-    transition-duration: 0.5s
-  .header__menu
-    opacity: 1
-    visibility: visible
-    transition-duration: 0.5s
-  .header__profile
-    opacity: 1
-    visibility: visible
-    transition-duration: 0.5s
+.header-without
+  .container
+    @media (max-width: 1024px)
+      padding-bottom: 0!important
 
 
 

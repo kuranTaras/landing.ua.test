@@ -1,0 +1,75 @@
+.recently
+  padding: 0 30px
+  @media (max-width: 768px)
+    padding: 0 14px
+  .container
+    flex-direction: column
+    max-width: 1372px
+    margin-bottom: 120px
+    @media (max-width: 768px)
+      margin-bottom: 70px
+    h1
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 100%
+      color: #212121
+      margin-bottom: 40px
+      @media (max-width: 768px)
+        font-size: 22px
+        margin-bottom: 30px
+    .recently__slider
+      position: relative
+      .recently__products
+        max-width: 100%
+        .recently__wrapper
+          display: flex
+      .recently__prev, .recently__next
+        position: absolute
+        width: 46px
+        height: 46px
+        background-color: #FFFFFF
+        align-items: center
+        display: flex
+        cursor: pointer
+        border-radius: 50%
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+        border: 0.5px solid #9E9E9E
+        justify-content: center
+        z-index: 1
+        outline: none
+        transition-duration: 0.3s
+        @media (max-width: 768px)
+          display: none
+        &:hover
+          background: #1976D2
+          border-color: #1976D2
+          path
+            stroke: #FFFFFF
+        path
+          transition-duration: 0.3s
+      .recently__next
+        right: 0
+        top: 50%
+        transform: translate(50%, -50%)
+        svg
+          transform: rotateY(180deg)
+      .recently__prev
+        left: 0
+        top: 50%
+        transform: translate(-50%, -50%)
+
+.recently-hide
+  @media (max-width: 1024px)
+    display: none
+
+
+
+
+
+
+
+
+
+

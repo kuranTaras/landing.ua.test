@@ -1,0 +1,64 @@
+.novelty
+  padding: 0 35px
+  @media (max-width: 768px)
+    padding: 0 14px
+  .container
+    flex-direction: column
+    max-width: 1372px
+    padding-bottom: 100px
+    @media (max-width: 768px)
+      padding-bottom: 60px
+    h1
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 100%
+      margin-bottom: 40px
+      color: #212121
+      @media (max-width: 768px)
+        font-size: 22px
+        margin-bottom: 30px
+    .novelty__slider
+      position: relative
+      .novelty__products
+        max-width: 100%
+        .novelty__wrapper
+          display: flex
+      .novelty__prev, .novelty__next
+        position: absolute
+        width: 46px
+        height: 46px
+        background-color: #FFFFFF
+        align-items: center
+        display: flex
+        cursor: pointer
+        border-radius: 50%
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+        border: 0.5px solid #9E9E9E
+        justify-content: center
+        z-index: 1
+        outline: none
+        transition-duration: 0.3s
+        @media (max-width: 768px)
+          display: none
+        &:hover
+          background: #1976D2
+          border-color: #1976D2
+          path
+            stroke: #FFFFFF
+        path
+          transition-duration: 0.3s
+      .novelty__next
+        right: 0
+        top: 50%
+        transform: translate(50%, -50%)
+        svg
+          transform: rotateY(180deg)
+      .novelty__prev
+        left: 0
+        top: 50%
+        transform: translate(-50%, -50%)
+.novelty-hide
+  @media (max-width: 1024px)
+    display: none

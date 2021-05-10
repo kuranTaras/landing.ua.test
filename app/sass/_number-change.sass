@@ -1,0 +1,176 @@
+.number__change
+  transition-duration: 0.3s
+  position: fixed
+  top: 0
+  left: 0
+  opacity: 0
+  visibility: hidden
+  z-index: 300
+  display: flex
+  width: 100vw
+  height: 100vh
+  .number__change-background
+    width: 100vw
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    height: 100vh
+    background: rgba(0,0,0,0.2)
+  .number__change-content
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1)
+    background: #FFFFFF
+    border-radius: 10px
+    padding: 40px
+    display: none
+    z-index: 2
+    position: absolute
+    width: 100vw
+    max-width: 444px
+    top: 50%
+    left: 50%
+    flex-direction: column
+    transform: translate(-50%, -50%)
+    @media (max-width: 768px)
+      padding: 0
+      border-radius: 0
+      height: 100%
+      min-height: 100vh
+      min-width: 100vw
+    h4
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 100%
+      color: #212121
+      margin-bottom: 27px
+      @media (max-width: 768px)
+        padding: 30px 0 30px 14px
+        font-size: 18px
+        font-weight: normal
+        border-bottom: 0.5px solid #BDBDBD
+        background: #F5F5F5
+    p
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 130%
+      color: #212121
+      max-width: 290px
+      @media (max-width: 768px)
+        margin-left: 14px
+        margin-right: 14px
+    h2
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      margin-top: 16px
+      color: #424242
+      padding: 10.5px 14px
+      background: #FAFAFA
+      border: 1px solid #9E9E9E
+      border-radius: 4px
+      @media (max-width: 768px)
+        margin-left: 14px
+        margin-right: 14px
+    form
+      display: flex
+      flex-direction: column
+      @media (max-width: 768px)
+        margin-left: 14px
+        margin-right: 14px
+        margin-bottom: 30px
+        height: 100%
+      input
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 100%
+        color: #616161
+        padding: 15px
+        background: #FFFFFF
+        border: 0.5px solid #9E9E9E
+        border-radius: 4px
+        margin-top: 25px
+      button
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 100%
+        text-align: center
+        color: #FFFFFF
+        background: #AD1457
+        border: 1px solid #AD1457
+        border-radius: 6px
+        padding: 20px 0
+        margin-top: 30px
+        cursor: pointer
+        transition-duration: 0.3s
+        @media (max-width: 768px)
+          margin-top: auto
+        &:hover
+          background: #880E4F
+    h5
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 100%
+      cursor: pointer
+      margin: 12px 0 0 auto
+      color: #1976D2
+    .number__change-circle
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      background: #E8F5E9
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 47px auto 20px auto
+    h6
+      font-family: Proxima Nova, sans-serif
+      max-width: 290px
+      margin: 0 auto 67px auto
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 110%
+      text-align: center
+      color: #212121
+    .number__change-close
+      cursor: pointer
+      position: absolute
+      right: 20px
+      top: 20px
+      @media (max-width: 768px)
+        right: 14px
+        top: 28px
+      &:hover
+        path
+          fill: #B71C1C
+      path
+        transition-duration: 0.3s
+
+  .content-third
+    @media (max-width: 768px)
+      min-height: 340px
+      height: auto
+      min-width: calc(100% - 28px)
+      border-radius: 10px
+      padding: 87px 0 107px 0
+      h6
+        margin: 0 auto
+      .number__change-circle
+        margin: 0 auto 20px auto
+  .number__change-content_active
+    display: flex
+.number__change_active
+  opacity: 1
+  visibility: visible

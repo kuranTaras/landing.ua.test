@@ -1,0 +1,144 @@
+.account__remove
+  position: fixed
+  top: 0
+  left: 0
+  opacity: 0
+  visibility: hidden
+  transition-duration: 0.3s
+  width: 100vw
+  height: 100vh
+  z-index: 200
+  .account__remove-content
+    position: absolute
+    z-index: 2
+    flex-direction: column
+    padding: 40px
+    display: none
+    width: 100%
+    max-width: 444px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background: #FFFFFF
+    border-radius: 10px
+    @media (max-width: 768px)
+      padding: 0
+      border-radius: 0
+      height: 100%
+      min-height: 100vh
+      min-width: 100vw
+    h4
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 110%
+      color: #212121
+      @media (max-width: 768px)
+        padding: 30px 0 30px 14px
+        font-size: 18px
+        font-weight: normal
+        border-bottom: 0.5px solid #BDBDBD
+        background: #F5F5F5
+    p
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 130%
+      margin: 27px 0 30px 0
+      color: #212121
+      @media (max-width: 768px)
+        margin-left: 14px
+        margin-right: 14px
+    form
+      display: flex
+      flex-direction: column
+      @media (max-width: 768px)
+        margin: auto 14px 30px 14px
+      button
+        padding: 20px 0
+        cursor: pointer
+        &:not(:last-child)
+          margin-bottom: 16px
+      .account__remove-yes
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 100%
+        text-align: center
+        color: #FFFFFF
+        background: #AD1457
+        border: none
+        border-radius: 6px
+        transition-duration: 0.3s
+        &:hover
+          background: #880E4F
+      .account__remove-no
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 100%
+        text-align: center
+        color: #AD1457
+        background: #FFFFFF
+        border: 1px solid #AD1457
+        border-radius: 6px
+        transition-duration: 0.3s
+        &:hover
+          background: #FCE4EC
+    h6
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 110%
+      text-align: center
+      color: #212121
+      max-width: 290px
+      margin: 0 auto 67px auto
+    .account__remove-circle
+      width: 80px
+      height: 80px
+      border-radius: 50%
+      background: #E8F5E9
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 47px auto 20px auto
+    .account__remove-close
+      position: absolute
+      right: 20px
+      top: 20px
+      cursor: pointer
+      &:hover
+        path
+          fill: #B71C1C
+      path
+        transition-duration: 0.3s
+  .content__second
+    @media (max-width: 768px)
+      min-height: 340px
+      height: auto
+      min-width: calc(100% - 28px)
+      border-radius: 10px
+      padding: 87px 0 107px 0
+      h6
+        margin: 0 auto
+      .number__change-circle
+        margin: 0 auto 20px auto
+  .content_active
+    display: flex
+  .account__remove-background
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    z-index: 1
+    background: rgba(0,0,0,0.2)
+.account__remove_active
+  opacity: 1
+  visibility: visible

@@ -1,0 +1,269 @@
+.log
+  position: fixed
+  display: flex
+  width: 100vw
+  height: 100vh
+  top: 0
+  opacity: 0
+  transition-duration: 0.3s
+  visibility: hidden
+  left: 0
+  z-index: 200
+  align-items: center
+  justify-content: center
+  .log__popup
+    display: none
+    transition-duration: 0.3s
+    position: relative
+    background: #FFFFFF
+    border-radius: 10px
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1)
+    width: 100%
+    max-width: 444px
+    overflow: hidden
+    z-index: 1
+    flex-direction: column
+    @media (max-width: 768px)
+      min-height: 100vh
+      height: 100%
+      border-radius: 0
+      width: 100%
+      min-width: 100vw
+    .log__top
+      display: flex
+      flex-direction: column
+      padding: 40px
+      background: #FFFFFF
+      @media (max-width: 768px)
+        padding: 0
+        height: 100%
+      h4
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 24px
+        line-height: 100%
+        color: #212121
+        margin-bottom: 28px
+        @media (max-width: 768px)
+          font-size: 18px
+          padding: 30px 14px
+          background: #F5F5F5
+      p
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 130%
+        color: #212121
+        margin-bottom: 24px
+        @media (max-width: 768px)
+          margin-left: 14px
+          margin-right: 14px
+      form
+        display: flex
+        flex-direction: column
+        @media (max-width: 768px)
+          margin-left: 14px
+          margin-right: 14px
+          height: 100%
+        .log__password-wrapper
+          display: flex
+        input
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 100%
+          color: #616161
+          padding: 16px 16px 16px 16px
+          border: 0.5px solid #9E9E9E
+          border-radius: 4px
+          background: #FFFFFF
+          width: 100%
+        .log__password-repeat-wrapper
+          margin: 16px 0 30px 0
+          @media (max-width: 768px)
+            margin-bottom: auto
+        .log-phone, .log-email
+          margin-bottom: 16px
+        .log__checkbox
+          display: flex
+          margin-top: 20px
+          align-items: center
+          .log__mark
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 20px
+            height: 20px
+            transition-duration: 0.3s
+            border-radius: 4px
+            border: 1px solid #AD1457
+            background: #AD1457
+            svg
+              transition-duration: 0.3s
+          h6
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 120%
+            color: #757575
+            margin-left: 14px
+            a
+              color: #1976D2
+              transition-duration: 0.3s
+              &:hover
+                color: #212121
+          .log__mark_passive
+            background: #FFFFFF
+            svg
+              opacity: 0
+              visibility: hidden
+      .log-forget
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 100%
+        color: #1976D2
+        margin: 12px 0 30px auto
+        cursor: pointer
+        transition-duration: 0.3s
+        @media (max-width: 768px)
+          margin-bottom: auto
+        &:hover
+          color: #212121
+      button
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 100%
+        padding: 20px 0
+        border-radius: 6px
+        cursor: pointer
+        transition-duration: 0.3s
+      .log-button-disabled
+        background: #EEEEEE
+        color: #9E9E9E
+        pointer-events: none
+      .log-enter
+        background: #AD1457
+        color: #FFFFFF
+        border: 1px solid #AD1457
+
+        &:hover
+          background: #880E4F
+      .log-enter-another
+        margin-top: 16px
+        border: 1px solid #AD1457
+        background: #FFFFFF
+        color: #C2185B
+        &:hover
+          background: #FCE4EC
+      .log__value
+        padding: 10.5px 14px
+        border: 1px solid #9E9E9E
+        border-radius: 4px
+        background: #FAFAFA
+        margin-bottom: 26px
+        margin-top: -4px
+        @media (max-width: 768px)
+          margin-left: 14px
+          margin-right: 14px
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          color: #424242
+      .log-button-disabled
+        background: #EEEEEE
+        color: #9E9E9E
+        border-color: #EEEEEE
+        cursor: default
+        &:hover
+          background: #EEEEEE
+    .log__bottom
+      background: #F5F5F5
+      padding: 30px 40px 40px 40px
+      @media (max-width: 768px)
+        padding: 30px 14px 40px 14px
+        margin-top: 40px
+      .log__socials
+        display: flex
+        justify-content: space-between
+        align-items: center
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 100%
+          color: #424242
+        .log__socials-all
+          display: flex
+          a
+            width: 32px
+            height: 32px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            transition-duration: 0.3s
+            &:first-child
+              background: #E2389E
+            &:nth-child(2)
+              background: #E92D2D
+            &:last-child
+              background: #1668B4
+            &:not(:last-child)
+              margin-right: 20px
+            &:hover
+              background: #212121
+      .log__registration
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 100%
+        text-align: center
+        color: #757575
+        margin-top: 30px
+        transition-duration: 0.3s
+        span
+          cursor: pointer
+          color: #1976D2
+          &:hover
+            color: #212121
+    .log__exit
+      position: absolute
+      right: 20px
+      top: 20px
+      cursor: pointer
+      z-index: 1
+      &:hover
+        path
+          fill: #B71C1C
+      path
+        transition-duration: 0.3s
+  .log__register-first
+    .log__top
+      form
+      .log-enter
+        margin-top: auto
+  .log__popup_active
+    display: flex
+  .log__background
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(0,0,0,0.2)
+.log_active
+  opacity: 1
+  visibility: visible

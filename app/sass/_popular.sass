@@ -1,13 +1,11 @@
 .popular
-  padding: 0 20px
+  padding: 0 14px
   .container
     flex-direction: column
     max-width: 1372px
     margin: 120px auto
     @media (max-width: 1024px)
       margin: 70px 0
-    @media (max-width: 768px)
-      margin: 30px 0
     h1
       font-family: Proxima Nova, sans-serif
       font-style: normal
@@ -18,7 +16,7 @@
       margin-bottom: 40px
       @media (max-width: 1024px)
         font-size: 30px
-        margin-bottom: 20px
+        margin-bottom: 30px
       @media (max-width: 768px)
         font-size: 22px
     .popular__categories
@@ -27,9 +25,10 @@
       grid-template-areas: "one one four five" "two three four five" "two three six six"
       @media (max-width: 1024px)
         grid-gap: 10px
-      @media (max-width: 500px)
+      @media (max-width: 768px)
         grid-gap: 5px
-        grid-template-areas: "one one" "two three" "two three" "four five" "four five" "six six"
+        grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six'
+        grid-auto-rows: 100px
       .popular__category
         overflow: hidden
         border-radius: 20px
@@ -37,7 +36,7 @@
         @media (max-width: 1024px)
           border-radius: 10px
         @media (max-width: 768px)
-          border-radius: 5px
+          background: #F5F5F5
         &:nth-child(1)
           grid-area: one
         &:nth-child(2)
@@ -51,8 +50,8 @@
         &:nth-child(6)
           grid-area: six
         &:hover
-          img
-            transform: scale(1.2)
+          .popular-big-img
+            transform: scale(1.15)
         .popular__text
           width: 100%
           height: 100%
@@ -62,11 +61,12 @@
           z-index: 2
           padding: 40px 30px 30px 40px
           display: flex
+          justify-content: center
           flex-direction: column
           @media (max-width: 1024px)
             padding: 30px 20px 20px 30px
           @media (max-width: 768px)
-            padding: 15px 10px 10px 15px
+            padding: 0 0 0 30px
           h4
             font-family: Proxima Nova, sans-serif
             font-style: normal
@@ -77,8 +77,13 @@
             @media (max-width: 1024px)
               font-size: 22px
             @media (max-width: 768px)
-              font-size: 16px
-          a
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 18px
+              line-height: 100%
+              color: #212121
+          .popular__arrow
             width: 46px
             height: 46px
             display: flex
@@ -92,22 +97,40 @@
               width: 40px
               height: 40px
             @media (max-width: 768px)
-              width: 30px
-              height: 30px
+              display: none
             &:hover
-              background-color: #212121
+              background: #1976D2
+              border-color: #1976D2
               path
                 stroke: #FFFFFF
+            path
+              transition-duration: 0.3s
             svg
               @media (max-width: 768px)
                 transform: scale(0.7)
               path
                 transition-duration: 0.3s
-        img
+          .popular-mobile-img
+            display: none
+            position: absolute
+            height: 78px
+            right: 18px
+            transform: translateY(-50%)
+            top: 50%
+            width: 103px
+            @media (max-width: 768px)
+              display: block
+            img
+              width: 100%
+              height: 100%
+              object-fit: contain
+        .popular-big-img
           width: 100%
           height: 100%
           transition-duration: 0.5s
           object-fit: cover
+          @media (max-width: 768px)
+            display: none
         .popular-gradient
           background: linear-gradient(145.65deg, #000000 1.24%, rgba(0, 0, 0, 0) 51.49%)
           width: 100%
@@ -120,7 +143,7 @@
           @media (max-width: 1024px)
             border-radius: 10px
           @media (max-width: 768px)
-            border-radius: 5px
+            display: none
 
 
 

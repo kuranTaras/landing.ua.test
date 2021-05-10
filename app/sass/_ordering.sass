@@ -1,0 +1,958 @@
+.ordering
+  background: #E8E8E8
+  padding: 0 14px
+  @media (max-width: 1024px)
+    padding: 0
+  .container
+    max-width: 1372px
+    flex-direction: column
+    padding-bottom: 120px
+    @media (max-width: 1024px)
+      padding-bottom: 144px
+    .ordering-prev
+      display: none
+      margin: 20px 0 0 14px
+      @media (max-width: 1024px)
+        display: block
+    h4
+      margin: 30px 0
+      display: flex
+      align-items: center
+      @media (max-width: 1024px)
+        display: none
+      a
+        display: flex
+        align-items: center
+        &:last-child
+          svg
+            display: none
+        &:not(:last-child)
+          margin-right: 10px
+        &:hover
+          span
+            color: #1976D2
+          path
+            stroke: #1976D2
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          color: #212121
+          transition-duration: 0.3s
+        svg
+          margin-left: 10px
+          path
+            transition-duration: 0.3s
+
+    h1
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 100%
+      color: #212121
+      margin-bottom: 40px
+      @media (max-width: 1024px)
+        font-size: 22px
+        margin: 20px 0 30px 14px
+    .ordering__bottom
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      @media (max-width: 1024px)
+        flex-direction: column-reverse
+      .ordering__left
+        display: flex
+        flex-direction: column
+        width: 66.1%
+        @media (max-width: 1024px)
+          width: 100%
+        .ordering__tabs
+          display: flex
+          background: #FFFFFF
+          border-radius: 10px
+          padding: 0 8px
+          margin-bottom: 20px
+          @media (max-width: 1024px)
+            display: none
+          .ordering__tab
+            display: flex
+            width: 33.333%
+            padding: 42px 0
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            &:hover
+              span
+                color: #1976D2
+            span
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 20px
+              line-height: 100%
+              text-align: center
+              color: #212121
+              transition-duration: 0.3s
+          .ordering__tab_hide
+            cursor: default
+            pointer-events: none
+            &:hover
+              span
+                color: #212121
+          .ordering__tab_active
+            position: relative
+            cursor: pointer
+            &:after
+              content: ''
+              position: absolute
+              bottom: 0
+              left: 0
+              width: 100%
+              height: 4px
+              background: #1976D2
+              border-radius: 100px
+            span
+              font-weight: 600
+              color: #1976D2
+        .ordering__tabs_hide
+          display: none
+        .ordering__dates
+          display: none
+          flex-direction: column
+          background: #FFFFFF
+          border-radius: 20px
+          padding: 40px
+          @media (max-width: 1024px)
+            display: flex
+            border-radius: 0
+            margin-bottom: 10px
+            padding: 30px 14px
+          .ordering__dates-text
+            display: flex
+            align-items: center
+            margin-bottom: 40px
+            @media (max-width: 1024px)
+              margin-bottom: 30px
+            h4
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 22px
+              line-height: 100%
+              color: #212121
+              margin: 0 30px 0 0
+              @media (max-width: 1024px)
+                display: block
+                font-size: 18px
+                margin-right: auto
+            p
+              span, a
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                color: #757575
+              a
+                color: #1976D2
+                transition-duration: 0.3s
+                &:hover
+                  color: #212121
+          .ordering__dates-form
+            display: flex
+            flex-direction: column
+            .ordering__inputs
+              display: flex
+              flex-direction: column
+              input
+                margin-right: auto
+                width: 100%
+                max-width: 320px
+                padding: 20px 0 21px 16px
+                border: 0.5px solid #9E9E9E
+                background: #FFFFFF
+                border-radius: 4px
+                outline: none
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                color: #616161
+                @media (max-width: 1024px)
+                  max-width: 100%
+                &:not(:last-child)
+                  margin-bottom: 16px
+            button
+              margin-top: 40px
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 16px
+              line-height: 100%
+              text-align: center
+              color: #FFFFFF
+              border: none
+              background: #AD1457
+              padding: 20px 33px
+              border-radius: 6px
+              margin-right: auto
+              cursor: pointer
+              outline: none
+              transition-duration: 0.3s
+              @media (max-width: 1024px)
+                display: none
+              &:hover
+                background: #880E4F
+        .ordering__pay
+          display: none
+          flex-direction: column
+          padding: 40px
+          height: 100%
+          background: #FFFFFF
+          border-radius: 20px
+          @media (max-width: 1024px)
+            display: flex
+            position: relative
+            padding: 30px 14px
+            border-radius: 0
+          h4
+            margin: 0 0 40px 0
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 22px
+            line-height: 100%
+            color: #212121
+            @media (max-width: 1024px)
+              display: block
+              font-size: 18px
+              margin-bottom: 30px
+          .ordering__pay-ways
+            display: flex
+            margin-bottom: 20px
+            @media (max-width: 1024px)
+              flex-direction: column
+            .ordering__pay-way
+              display: flex
+              flex-direction: column
+              width: 100%
+              max-width: 240px
+              padding: 28px
+              cursor: pointer
+              transition-duration: 0.3s
+              border-radius: 4px
+              border: 0.5px solid #9E9E9E
+              background: #FFFFFF
+              align-items: center
+              @media (max-width: 1024px)
+                max-width: 100%
+              &:not(:last-child)
+                margin-right: 12px
+                @media (max-width: 1024px)
+                  margin-right: 0
+                  margin-bottom: 10px
+              h5
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                text-align: center
+                color: #616161
+                margin: 8px 0
+                transition-duration: 0.3s
+              h6
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 100%
+                text-align: center
+                color: #616161
+                span
+                  color: #212121
+              svg
+                path
+                  stroke: #9E9E9E
+            .ordering__pay-way_active
+              background: rgba(25, 118, 210, 0.06)
+              border-color: #1976D2
+              h5
+                color: #212121
+              svg
+                path
+                  stroke: #1976D2
+          .ordering__pay-button
+            margin-right: auto
+            margin-top: auto
+            padding: 20px 18.5px
+            background: #AD1457
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 100%
+            text-align: center
+            color: #FFFFFF
+            border-radius: 6px
+            transition-duration: 0.3s
+            cursor: pointer
+            @media (max-width: 1024px)
+              position: absolute
+              bottom: -30px
+              width: calc(100% - 28px)
+              left: 14px
+              transform: translateY(100%)
+            &:hover
+              background: #880E4F
+        .ordering__delivery
+          display: none
+          flex-direction: column
+          background: #FFFFFF
+          padding: 40px
+          border-radius: 20px
+          @media (max-width: 1024px)
+            display: flex
+            border-radius: 0
+            margin-bottom: 10px
+            padding: 30px 14px
+          h4
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 22px
+            line-height: 100%
+            color: #212121
+            margin: 0 0 40px 0
+            @media (max-width: 1024px)
+              display: block
+              font-size: 18px
+              margin-bottom: 30px
+          .ordering__delivery-ways
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-gap: 12px
+            justify-content: space-between
+            @media (max-width: 1024px)
+              grid-template-columns: 1fr 1fr
+              grid-gap: 10px
+            .ordering__delivery-way
+              width: 100%
+              cursor: pointer
+              align-items: center
+              display: flex
+              flex-direction: column
+              height: 120px
+              background: #FFFFFF
+              justify-content: center
+              border: 0.5px solid #9E9E9E
+              border-radius: 4px
+              padding: 0 30px
+              transition-duration: 0.3s
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                transition-duration: 0.3s
+                margin-top: 10px
+                color: #616161
+                text-align: center
+            .ordering__delivery-way_active
+              background: rgba(25, 118, 210, 0.06)
+              border-color: #1976D2
+              span
+                color: #212121
+          .ordering__delivery-down
+            display: none
+            flex-direction: column
+            p
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 14px
+              line-height: 100%
+              color: #212121
+              margin: 30px 0 20px 0
+            form
+              display: flex
+              flex-direction: column
+              .ordering__delivery-input-wrapper
+                margin-bottom: 16px
+                position: relative
+                margin-right: auto
+                width: 100%
+                max-width: 360px
+                cursor: pointer
+                @media (max-width: 1024px)
+                  max-width: 100%
+                input
+                  cursor: pointer
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 16px
+                  line-height: 100%
+                  color: #616161
+                  padding: 20px 16px
+                  width: 100%
+                  background: #FFFFFF
+                  border: 0.5px solid #9E9E9E
+                  border-radius: 4px
+                svg
+                  position: absolute
+                  right: 20px
+                  top: 21px
+              .ordering__delivery-select
+                display: flex
+                flex-direction: column
+                width: 100%
+                max-width: 360px
+                margin-bottom: 16px
+                position: relative
+                @media (max-width: 1024px)
+                  max-width: 100%
+                .selected
+                  display: flex
+                  justify-content: space-between
+                  background: #FFFFFF
+                  border: 0.5px solid #9E9E9E
+                  border-radius: 4px
+                  padding: 20px 16px
+                  cursor: pointer
+                .select-down
+                  position: absolute
+                  bottom: 0
+                  transform: translateY(100%)
+                  display: none
+                  flex-direction: column
+                  z-index: 10
+                  background: #FFFFFF
+                  width: 100%
+                  left: 0
+                  border: 0.5px solid #9E9E9E
+                  border-radius: 4px
+                  border-top: none
+                  span
+                    padding: 20px 16px
+                    cursor: pointer
+                .select-down_active
+                  display: flex
+                span
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 16px
+                  line-height: 100%
+                  color: #616161
+              .ordering__delivery-post-ways
+                width: 100%
+                max-width: 360px
+                @media (max-width: 1024px)
+                  max-width: 100%
+                input
+                  background: #FFFFFF
+                  border: 0.5px solid #9E9E9E
+                  border-radius: 4px
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 16px
+                  line-height: 100%
+                  color: #616161
+                  padding: 20px 16px
+                .ordering__delivery-post-way
+                  display: none
+                  width: 100%
+                  flex-direction: column
+                  .ordering__delivery-post-input
+                    position: relative
+                    width: 100%
+                    input
+                      padding: 20px 16px
+                      width: 100%
+                      background: #FFFFFF
+                      border: 0.5px solid #9E9E9E
+                      border-radius: 4px
+                    svg
+                      position: absolute
+                      right: 20px
+                      top: 21px
+                  .ordering__delivery-post-inputs
+                    width: 100%
+                    max-width: 360px
+                    display: flex
+                    margin: 16px 0
+                    justify-content: space-between
+                    @media (max-width: 1024px)
+                      max-width: 100%
+                    input
+                      max-width: 174px
+                      @media (max-width: 1024px)
+                        width: 100%
+                        max-width: 47%
+                  textarea
+                    background: #FFFFFF
+                    border: 0.5px solid #9E9E9E
+                    border-radius: 4px
+                    resize: none
+                    outline: none
+                    padding: 18px 28px 18px 16px
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 130%
+                    color: #616161
+                .ordering__delivery-post-way_active
+                  display: flex
+              button
+                margin-top: 24px
+                max-width: 260px
+                padding: 20px 0
+                background: #AD1457
+                border: 1px solid #AD1457
+                border-radius: 6px
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 16px
+                line-height: 100%
+                text-align: center
+                color: #FFFFFF
+                transition-duration: 0.3s
+                cursor: pointer
+                @media (max-width: 1024px)
+                  display: none
+                &:hover
+                  background: #880E4F
+          .ordering__delivery-down-solo
+            p
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 160%
+              color: #424242
+              max-width: 560px
+              margin: 24px 0 30px 0
+              span
+                font-weight: 600
+            .ordering__delivery-down-map
+              display: flex
+              height: 320px
+              width: 100%
+              border-radius: 10px
+              overflow: hidden
+              @media (max-width: 1024px)
+                height: 480px
+            button
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 16px
+              line-height: 100%
+              text-align: center
+              color: #FFFFFF
+              background: #AD1457
+              border: 1px solid #AD1457
+              border-radius: 6px
+              padding: 20px 39px
+              margin-right: auto
+              margin-top: 60px
+              cursor: pointer
+              transition-duration: 0.3s
+              @media (max-width: 1024px)
+                display: none
+              &:hover
+                background: #880E4F
+          .ordering__delivery-down_active
+            display: flex
+        .ordering__change_done
+          display: none
+          flex-direction: column
+          border-radius: 20px
+          background: #FFFFFF
+          padding: 40px
+          @media (max-width: 1024px)
+            border-radius: 0
+            padding: 30px 14px
+            position: relative
+          .ordering__done-title
+            display: flex
+            align-items: center
+            margin-bottom: 28px
+            h4
+              margin: 0 30px 0 0
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 22px
+              line-height: 100%
+              color: #212121
+              @media (max-width: 1024px)
+                display: block
+                font-size: 18px
+            p
+              @media (max-width: 1024px)
+                display: none
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                color: #757575
+                &:last-child
+                  font-weight: 600
+                  cursor: pointer
+                  color: #1976D2
+                  transition-duration: 0.3s
+                  &:hover
+                    color: #212121
+          .ordering__done-dates
+            display: flex
+            flex-direction: column
+            .ordering__done-date
+              display: flex
+              flex-direction: column
+              &:not(:last-child)
+                padding-bottom: 30px
+                border-bottom: 0.5px solid #BDBDBD
+              &:not(:first-child)
+                padding-top: 18px
+              h5
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 16px
+                line-height: 240%
+                color: #212121
+              .ordering__done-date-all
+                display: flex
+                flex-direction: column
+                p
+                  display: flex
+                  justify-content: space-between
+                  span
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 240%
+                    color: #9E9E9E
+                    &:last-child
+                      font-style: italic
+                      color: #212121
+                      @media (max-width: 1024px)
+                        color: #757575
+                    &:first-child
+                      @media (max-width: 1024px)
+                        display: none
+          .ordering__done-refactor
+            display: none
+            align-items: center
+            margin-top: 40px
+            @media (max-width: 1024px)
+              display: flex
+            span
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 100%
+              color: #1976D2
+              margin-right: 10px
+          a
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 100%
+            text-align: center
+            color: #FFFFFF
+            background: #AD1457
+            padding: 20px 33.5px
+            margin-right: auto
+            margin-top: 40px
+            transition-duration: 0.3s
+            border-radius: 6px
+            @media (max-width: 1024px)
+              position: absolute
+              bottom: -30px
+              transform: translateY(100%)
+              left: 14px
+              width: calc(100% - 28px)
+            &:hover
+              background: #880E4F
+        .ordering__change_active
+          display: flex
+        .ordering__change-mobile
+          display: none!important
+      .ordering__right
+        width: 32.3%
+        background: #FFFFFF
+        border-radius: 20px
+        padding: 40px
+        display: flex
+        flex-direction: column
+        @media (max-width: 1024px)
+          display: none
+          width: 100%
+          border-radius: 0
+          margin-bottom: 10px
+          padding: 30px 14px 94px 14px
+          position: relative
+        h5
+          align-items: center
+          display: flex
+          justify-content: space-between
+          margin-bottom: 30px
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 22px
+            line-height: 100%
+            color: #212121
+            @media (max-width: 1024px)
+              font-size: 18px
+          a
+            display: flex
+            align-items: center
+            @media (max-width: 1024px)
+              position: absolute
+              bottom: 40px
+              left: 14px
+            &:hover
+              p
+                color: #212121
+              path
+                stroke: #212121
+            p
+              transition-duration: 0.3s
+              margin-right: 10px
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 14px
+              line-height: 100%
+              color: #1976D2
+            path
+              transition-duration: 0.3s
+        .ordering__products
+          display: flex
+          flex-direction: column
+          padding-bottom: 40px
+          @media (max-width: 1024px)
+            padding-bottom: 0
+          .ordering__product
+            display: flex
+            align-items: center
+            @media (max-width: 1024px)
+              padding-bottom: 30px
+              align-items: flex-start
+              position: relative
+            &:hover
+              .ordering__product-about
+                color: #1976D2
+            &:not(:last-child)
+              margin-bottom: 24px
+              @media (max-width: 1024px)
+                border-bottom: 0.5px solid #BDBDBD
+            .ordering__product-img
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 100%
+              max-width: 80px
+              height: 70px
+              background: #F5F5F5
+              border-radius: 6px
+              @media (max-width: 1024px)
+                max-width: 107px
+                height: 107px
+              img
+                width: 52px
+                height: 52px
+                object-fit: contain
+                @media (max-width: 1024px)
+                  width: 62.6%
+                  height: 100%
+            .ordering__product-text
+              margin-left: 16px
+              display: flex
+              max-width: 181px
+              flex-direction: column
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: italic
+                font-weight: normal
+                font-size: 12px
+                line-height: 130%
+                color: #757575
+              p
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                transition-duration: 0.3s
+                font-size: 15px
+                line-height: 130%
+                color: #212121
+                @media (max-width: 1024px)
+                  font-size: 14px
+            .ordering__product-price
+              display: flex
+              flex-direction: column
+              margin-left: auto
+              @media (max-width: 1024px)
+                position: absolute
+                left: 126px
+                bottom: 30px
+              p
+                display: flex
+                align-content: flex-start
+                justify-content: flex-end
+                &:first-child
+                  @media (max-width: 1024px)
+                    justify-content: flex-end
+                  span
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 100%
+                    text-align: right
+                    color: #212121
+                    &:last-child
+                      font-weight: 300
+                &:last-child
+                  align-items: flex-end
+                  span
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 18px
+                    line-height: 100%
+                    text-align: right
+                    color: #212121
+                    &:first-child
+                      font-weight: 700
+                    &:last-child
+                      font-size: 16px
+                      margin-left: 3px
+                &:not(:last-child)
+                  position: relative
+                  margin-left: auto
+                  margin-bottom: 6px
+                  @media (max-width: 1024px)
+                    margin-left: 0
+                    margin-right: auto
+                  &:after
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 0.5px
+                    background-color: #212121
+                    left: 0
+                    top: 5px
+            .ordering__product-close
+              display: none
+
+              @media (max-width: 1024px)
+                display: block
+        .ordering__prices
+          display: flex
+          flex-direction: column
+          padding: 30px 0
+          border-bottom: 0.5px solid #BDBDBD
+          position: relative
+          @media (max-width: 1024px)
+            padding: 19px 0 30px 0
+          &:before
+            content: ''
+            position: absolute
+            width: calc(100% + 80px)
+            top: 0
+            height: 0.5px
+            background: #BDBDBD
+            left: -40px
+          .ordering__price
+            display: flex
+            justify-content: space-between
+            h5
+              font-family: Proxima Nova, sans-serif
+              font-style: italic
+              font-weight: normal
+              font-size: 16px
+              line-height: 240%
+              color: #757575
+              margin: 0
+            h6
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 240%
+              text-align: right
+              color: #212121
+              span
+                font-weight: 600
+        .ordering__all-price
+          display: flex
+          margin-top: 30px
+          div
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            h4
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 20px
+              line-height: 100%
+              color: #212121
+              margin: 0
+              @media (max-width: 1024px)
+                display: block
+            h5
+              margin: 0
+              display: flex
+              align-items: flex-end
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                text-align: right
+                color: #757575
+                &:first-child
+                  color: #AD1457
+                  font-weight: 700
+                  font-size: 24px
+                  margin-right: 4px
+      .ordering__right-mobile
+        display: flex!important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

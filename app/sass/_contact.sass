@@ -1,0 +1,339 @@
+.contact
+  background: #F5F5F5
+  padding: 0 14px
+  @media (max-width: 1024px)
+    padding: 0 0 50px 0
+  .container
+    max-width: 1372px
+    flex-direction: column
+    padding-bottom: 120px
+    @media (max-width: 1024px)
+      padding-bottom: 0
+      background: #FFFFFF
+
+    h4
+      margin: 30px 0
+      display: flex
+      align-items: center
+      @media (max-width: 1024px)
+        display: none
+      a
+        display: flex
+        align-items: center
+        &:last-child
+          svg
+            display: none
+        &:not(:last-child)
+          margin-right: 10px
+        &:hover
+          span
+            color: #1976D2
+          path
+            stroke: #1976D2
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          color: #212121
+          transition-duration: 0.3s
+        svg
+          margin-left: 10px
+          path
+            transition-duration: 0.3s
+    h1
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 100%
+      color: #212121
+      margin-bottom: 40px
+      @media (max-width: 1024px)
+        font-size: 22px
+        margin-bottom: 30px
+        margin-top: 20px
+        margin-left: 14px
+    .contact__map
+      display: flex
+      padding: 20px
+      background: #FFFFFF
+      border-radius: 20px
+      height: 460px
+      margin-bottom: 20px
+      order: 1
+      @media (max-width: 1024px)
+        margin-bottom: 0
+        padding: 0 0 50px 0
+        border-radius: 0
+    .contact__bottom
+      display: flex
+      border-radius: 20px
+      background: #FFFFFF
+      overflow: hidden
+      @media (max-width: 1024px)
+        border-radius: 0
+      .contact__left
+        display: flex
+        flex-direction: column
+        padding: 60px
+        background: #252024
+        width: 40.8%
+        @media (max-width: 1024px)
+          width: 100%
+          padding: 40px 14px
+        h4
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 600
+          font-size: 24px
+          line-height: 100%
+          color: #FFFFFF
+          margin: 0 0 30px 0
+          @media (max-width: 1024px)
+            display: block
+        h5
+          display: flex
+          align-items: center
+          margin-right: auto
+          span
+            transition-duration: 0.3s
+            font-family: Proxima Nova, sans-serif
+            font-style: italic
+            font-weight: normal
+            font-size: 16px
+            line-height: 100%
+            color: #757575
+            margin-left: 20px
+          svg
+            path
+              transition-duration: 0.3s
+        .contact__email
+          margin: 0 auto 30px 0
+          cursor: pointer
+          &:hover
+            span
+              color: #1976D2
+            path
+              stroke: #1976D2
+        .contact__numbers
+          display: flex
+          flex-direction: column
+          margin: 45px 0
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 100%
+            color: #FFFFFF
+            cursor: pointer
+            transition-duration: 0.3s
+            &:not(:last-child)
+              margin-bottom: 24px
+            &:hover
+              color: #1976D2
+        .contact__social
+          display: flex
+          margin-top: 40px
+          a
+            width: 42px
+            height: 42px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            transition-duration: 0.3s
+            &:first-child
+              background: #E2389E
+            &:nth-child(2)
+              background: #2EAEE4
+            &:last-child
+              background: #1668B4
+            &:not(:last-child)
+              margin-right: 30px
+            &:hover
+              background: #FFFFFF
+        .enter-contact-form
+          display: none
+          padding: 20px 25px
+          background: #AD1457
+          border-radius: 6px
+          margin-right: auto
+          margin-top: 40px
+          align-items: center
+          @media (max-width: 1024px)
+            display: flex
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 100%
+            text-align: center
+            color: #FFFFFF
+            margin-right: 14px
+      .contact__right
+        width: 59.2%
+        padding: 60px 60px 60px 116px
+        display: flex
+        flex-direction: column
+        @media (max-width: 1024px)
+          position: fixed
+          width: 100%
+          background: #FFFFFF
+          height: 100%
+          min-height: 100vw
+          z-index: 200
+          top: 0
+          padding: 0 14px 30px 14px
+        h4
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 600
+          font-size: 24px
+          line-height: 100%
+          color: #212121
+          margin-bottom: 17px
+          display: block
+        p
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 130%
+          color: #616161
+          margin-bottom: 40px
+          @media (max-width: 1024px)
+            margin-bottom: 30px
+        form
+          display: flex
+          flex-direction: column
+          .contact__inputs
+            display: flex
+            flex-direction: column
+            input
+              border: 1px solid #9E9E9E
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 100%
+              color: #616161
+              padding: 20px 16px
+              outline: none
+              border-radius: 4px
+              max-width: 320px
+              @media (max-width: 1024px)
+                max-width: 100%
+              &:not(:last-child)
+                margin-bottom: 16px
+          .contact__checkbox
+            display: flex
+            align-content: center
+            margin-top: 22px
+            .contact__mark
+              display: flex
+              width: 20px
+              height: 20px
+              background: #FFFFFF
+              align-items: center
+              justify-content: center
+              border-radius: 4px
+              transition-duration: 0.3s
+              border: 1px solid #9E9E9E
+              &:hover
+                border: 1px solid #AD1457
+              svg
+                display: none
+            .contact__mark_active
+              background: #AD1457
+              border: 1px solid #AD1457
+              svg
+                display: block
+            p
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 14px
+              line-height: 120%
+              color: #757575
+              margin: auto 0 auto 14px
+              a
+                color: #1976D2
+                @media (max-width: 1024px)
+                  display: block
+          button
+            outline: none
+            padding: 20px 33px
+            background: #EEEEEE
+            border: 1px solid #EEEEEE
+            margin-right: auto
+            display: flex
+            align-items: center
+            border-radius: 6px
+            margin-top: 19px
+            transition-duration: 0.3s
+            @media (max-width: 1024px)
+              padding: 20px 0
+              width: 100%
+              justify-content: center
+              margin-top: 122px
+            span
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 16px
+              line-height: 100%
+              text-align: center
+              color: #9E9E9E
+              margin-right: 14px
+              transition-duration: 0.3s
+              @media (max-width: 1024px)
+                margin-right: 0
+            svg
+              @media (max-width: 1024px)
+                display: none
+            path
+              transition-duration: 0.3s
+              stroke: #9E9E9E
+          .contact__button_active
+            background: #AD1457
+            border-color: #AD1457
+            cursor: pointer
+            span
+              color: #FFFFFF
+            path
+              stroke: #FFFFFF
+        .contact__mobile-top
+          display: none
+          justify-content: space-between
+          align-items: center
+          padding: 30px 14px
+          background: #F5F5F5
+          width: calc(100% + 28px)
+          margin-left: -14px
+          @media (max-width: 1024px)
+            display: flex
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 100%
+            color: #212121
+      .contact__right-mobile
+        @media (max-width: 1024px)
+          display: none
+      .contact__right-mobile_active
+        @media (max-width: 1024px)
+          display: flex
+
+
+
+
+
+
+
+

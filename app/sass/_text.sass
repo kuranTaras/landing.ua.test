@@ -1,0 +1,480 @@
+.text
+  background: #F5F5F5
+  padding: 0 14px
+  @media (max-width: 1024px)
+    padding: 0
+  .container
+    max-width: 1372px
+    flex-direction: column
+    padding-bottom: 120px
+    @media (max-width: 1024px)
+      padding-bottom: 0
+    h4
+      margin: 30px 0
+      display: flex
+      align-items: center
+      @media (max-width: 1024px)
+        display: none
+      a
+        display: flex
+        align-items: center
+        &:last-child
+          svg
+            display: none
+        &:not(:last-child)
+          margin-right: 10px
+        &:hover
+          span
+            color: #1976D2
+          path
+            stroke: #1976D2
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          color: #212121
+          transition-duration: 0.3s
+        svg
+          margin-left: 10px
+          path
+            transition-duration: 0.3s
+    .text__bottom
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      @media (max-width: 1024px)
+        flex-direction: column
+      .text__menu
+        position: sticky
+        top: 20px
+        left: 0
+        display: flex
+        flex-direction: column
+        width: 100%
+        max-width: 328px
+        @media (max-width: 1024px)
+          display: none
+        .text__anchors
+          display: flex
+          border-radius: 10px
+          background: #FFFFFF
+          flex-direction: column
+          padding: 30px
+          margin-bottom: 46px
+          .text__anchors-all
+            display: flex
+            flex-direction: column
+            padding-bottom: 30px
+            border-bottom: 0.5px solid #BDBDBD
+            a
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 100%
+              transition-duration: 0.3s
+              color: #212121
+              margin-right: auto
+              &:hover
+                color: #1976D2
+              &:not(:last-child)
+                margin-bottom: 30px
+            .text__anchor_active
+              color: #AD1457
+              font-weight: 600
+          .text__contact
+            display: flex
+            align-items: center
+            margin-top: 30px
+            margin-right: auto
+            &:hover
+              span
+                color: #212121
+              path
+                stroke: #212121
+            span
+              transition-duration: 0.3s
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 100%
+              color: #1976D2
+              margin-right: 10px
+            path
+              transition-duration: 0.3s
+        .text__products
+          display: flex
+          flex-direction: column
+          @media (max-width: 1024px)
+            display: none
+          h4
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 20px
+            line-height: 100%
+            color: #212121
+            margin: 0 0 20px 0
+          .text__products-all
+            display: flex
+            flex-direction: column
+            .text__product
+              border-radius: 10px
+              background: #FFFFFF
+              display: flex
+              align-items: center
+              padding: 24px 7px 24px 17px
+              &:not(:last-child)
+                margin-bottom: 6px
+              .text__product-img
+                width: 92px
+                height: 92px
+                display: flex
+                margin-right: 7px
+                img
+                  width: 100%
+                  height: 100%
+                  object-fit: contain
+              .text__product-text
+                display: flex
+                max-width: 205px
+                flex-direction: column
+                &:hover
+                  .text__product-about
+                    color: #1976D2
+                .text__product-about
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 14px
+                  line-height: 130%
+                  color: #212121
+                  display: flex
+                  transition-duration: 0.3s
+                  flex-direction: column
+                  margin-bottom: 20px
+                  span
+                    font-style: italic
+                .product__price
+                  display: flex
+                  flex-direction: row-reverse
+                  justify-content: flex-end
+                  p
+                    margin-bottom: 0
+                    display: flex
+                    &:first-child
+                      span
+                        font-family: Proxima Nova, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 100%
+                        color: #212121
+                        &:last-child
+                          font-weight: 300
+                          margin-left: 2px
+                    &:last-child
+                      span
+                        font-family: Proxima Nova, sans-serif
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 18px
+                        line-height: 100%
+                        color: #212121
+                        &:first-child
+                          font-weight: 700
+                          margin-right: 3px
+                        &:last-child
+                          margin-top: auto
+                          font-size: 16px
+                    &:not(:last-child)
+                      position: relative
+                      margin-left: 10px
+                      margin-bottom: auto
+                      &:after
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 0.5px
+                        background-color: #212121
+                        left: 0
+                        top: 6px
+      .text__content
+        display: flex
+        flex-direction: column
+        max-width: 1024px
+        margin-left: 20px
+        @media (max-width: 1024px)
+          margin-left: 0
+        .text__about
+          display: flex
+          flex-direction: column
+          padding: 60px 60px 40px 60px
+          border-radius: 10px
+          background: #FFFFFF
+          margin-bottom: 20px
+          position: relative
+          @media (max-width: 1024px)
+            padding: 20px 14px 50px 14px
+            border-radius: 0
+            margin-bottom: 410px
+          .text-absolute
+            position: absolute
+            top: -20px
+          h1
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 100%
+            color: #212121
+            margin-bottom: 35px
+            @media (max-width: 1024px)
+              font-size: 22px
+              margin-bottom: 26px
+          p
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 160%
+            color: #616161
+            margin-bottom: 20px
+          .text__awards
+            display: flex
+            justify-content: space-between
+            margin: 40px 0 55px 0
+            @media (max-width: 1024px)
+              margin: 32px 0 40px 0
+              flex-direction: column
+            .text__award
+              display: flex
+              flex-direction: column
+              width: 100%
+              max-width: 253px
+              &:first-child
+                .text__award-img
+                  background: #FCE4EC
+              &:nth-child(2)
+                .text__award-img
+                  background: #E3F2FD
+              &:last-child
+                .text__award-img
+                  background: #E8F5E9
+              &:not(:last-child)
+                @media (max-width: 1024px)
+                  margin-bottom: 40px
+              .text__award-img
+                width: 70px
+                height: 70px
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 50%
+              h5
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 130%
+                color: #212121
+                margin-top: 20px
+                display: flex
+                flex-direction: column
+                span
+                  font-size: 14px
+                  font-style: italic
+          .text__banner
+            width: 100%
+            height: 440px
+            margin: 20px 0 36px 0
+            @media (max-width: 1024px)
+              border-radius: 10px
+              overflow: hidden
+            img
+              width: 100%
+              height: 100%
+              object-fit: cover
+        .text__delivery
+          display: flex
+          flex-direction: column
+          background: #FFFFFF
+          border-radius: 20px
+          padding: 0 60px 60px 60px
+          margin-bottom: 20px
+          position: relative
+          @media (max-width: 1024px)
+            padding: 20px 14px 20px 14px
+            border-radius: 0
+            margin-bottom: 460px
+          .text-absolute
+            position: absolute
+            top: -20px
+          h2
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 100%
+            color: #212121
+            margin-bottom: 42px
+            margin-top: 60px
+            @media (max-width: 1024px)
+              font-size: 22px
+              margin: 0 0 30px 0
+          .text-delivery-h2
+            @media (max-width: 1024px)
+              margin-top: 30px
+          .text__delivery-all
+            .text__delivery-way
+              display: flex
+              flex-direction: column
+              @media (max-width: 1024px)
+                margin-bottom: 30px
+              &:not(:last-child)
+                margin-bottom: 40px
+                @media (max-width: 1024px)
+                  padding-bottom: 30px
+
+                  border-bottom: 0.5px solid #BDBDBD
+              h4
+                display: flex
+                align-items: center
+                margin: 0 0 19px 0
+                @media (max-width: 1024px)
+                  flex-direction: column
+                  align-items: flex-start
+                span
+                  margin-left: 20px
+                  font-family: Proxima Nova, sans-serif
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 22px
+                  line-height: 100%
+                  color: #212121
+                  @media (max-width: 1024px)
+                    margin-left: 0
+                    margin-top: 12px
+                    font-size: 18px
+              p
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 160%
+                color: #616161
+        .text__return
+          border-radius: 20px
+          background: #FFFFFF
+          padding: 60px 116px 60px 60px
+          display: flex
+          flex-direction: column
+          position: relative
+          @media (max-width: 1024px)
+            padding: 20px 14px 20px 14px
+            margin-bottom: 460px
+            border-radius: 0
+            position: relative
+          .text-absolute
+            position: absolute
+            top: -20px
+          h2
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 100%
+            color: #212121
+            margin-bottom: 35px
+            @media (max-width: 1024px)
+              font-size: 22px
+              margin-bottom: 24px
+          p
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 160%
+            color: #616161
+            margin-bottom: 30px
+            padding-right: 72px
+            @media (max-width: 1024px)
+              padding-right: 0
+          .text__return-text
+            display: flex
+            flex-direction: column
+            margin-top: 10px
+            h4
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 22px
+              line-height: 100%
+              color: #212121
+              margin: 0 0 19px 0
+            .text__return_green
+              background: #F1F7FD
+              padding: 14px 99px 20px 20px
+              color: #212121
+              border-radius: 10px
+              border: 0.5px solid #BDBDBD
+              @media (max-width: 1024px)
+                width: calc(100% + 28px)
+                position: relative
+                left: -14px
+                border-radius: 0
+                padding: 25px 14px 30px 14px
+                border: none
+        .mobile-none
+          @media (max-width: 1024px)
+            display: none
+        .mobile-active
+          @media (max-width: 1024px)
+            display: flex
+      .text__mobile
+        position: absolute
+        flex-direction: column
+        width: 100%
+        display: none
+        padding: 0 14px
+        bottom: -50px
+        left: 0
+        transform: translateY(100%)
+        @media (max-width: 1024px)
+          display: flex
+        .text__mobile-link
+          display: flex
+          align-items: center
+          justify-content: space-between
+          padding: 40px 30px
+          background: #FFFFFF
+          border-radius: 10px
+          &:not(:last-child)
+            margin-bottom: 6px
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 100%
+            color: #212121
+      .mobile-prev
+        display: none
+        @media (max-width: 1024px)
+          display: block
+          margin-bottom: 20px
+
+
+
+
+
+
+
+
+
+
+
+

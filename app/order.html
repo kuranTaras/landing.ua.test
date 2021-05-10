@@ -11,7 +11,7 @@
     <title>Home</title>
 </head>
 <body>
-<header class="header">
+<header class="header header-without">
     <div class="container header-container ">
         <div class="header__top">
             <div class="header__content">
@@ -922,1041 +922,325 @@
     </div>
     <a href="" name="top" class="header__scroll"></a>
 </header>
-<div class="mobile-search">
-    <div class="mobile-search__top">
-        <svg class="mobile-search-svg-one" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.4434 16.4434L20.9997 20.9997" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <svg class="mobile-search-svg-two" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.4099 12.0002L17.7099 7.71019C17.8982 7.52188 18.004 7.26649 18.004 7.00019C18.004 6.73388 17.8982 6.47849 17.7099 6.29019C17.5216 6.10188 17.2662 5.99609 16.9999 5.99609C16.7336 5.99609 16.4782 6.10188 16.2899 6.29019L11.9999 10.5902L7.70994 6.29019C7.52164 6.10188 7.26624 5.99609 6.99994 5.99609C6.73364 5.99609 6.47824 6.10188 6.28994 6.29019C6.10164 6.47849 5.99585 6.73388 5.99585 7.00019C5.99585 7.26649 6.10164 7.52188 6.28994 7.71019L10.5899 12.0002L6.28994 16.2902C6.19621 16.3832 6.12182 16.4938 6.07105 16.6156C6.02028 16.7375 5.99414 16.8682 5.99414 17.0002C5.99414 17.1322 6.02028 17.2629 6.07105 17.3848C6.12182 17.5066 6.19621 17.6172 6.28994 17.7102C6.3829 17.8039 6.4935 17.8783 6.61536 17.9291C6.73722 17.9798 6.86793 18.006 6.99994 18.006C7.13195 18.006 7.26266 17.9798 7.38452 17.9291C7.50638 17.8783 7.61698 17.8039 7.70994 17.7102L11.9999 13.4102L16.2899 17.7102C16.3829 17.8039 16.4935 17.8783 16.6154 17.9291C16.7372 17.9798 16.8679 18.006 16.9999 18.006C17.132 18.006 17.2627 17.9798 17.3845 17.9291C17.5064 17.8783 17.617 17.8039 17.7099 17.7102C17.8037 17.6172 17.8781 17.5066 17.9288 17.3848C17.9796 17.2629 18.0057 17.1322 18.0057 17.0002C18.0057 16.8682 17.9796 16.7375 17.9288 16.6156C17.8781 16.4938 17.8037 16.3832 17.7099 16.2902L13.4099 12.0002Z" fill="#9E9E9E"/>
-        </svg>
-        <input class="mobile-search-input" type="text" placeholder="Что вы ищите?">
-        <button>
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.0303 16.623C13.6546 16.623 16.5928 13.6849 16.5928 10.0605C16.5928 6.43618 13.6546 3.49805 10.0303 3.49805C6.4059 3.49805 3.46777 6.43618 3.46777 10.0605C3.46777 13.6849 6.4059 16.623 10.0303 16.623Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14.6699 14.7012L18.4668 18.4981" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </button>
-    </div>
-    <div class="mobile-search__bottom mobile-search__bottom-hide">
-        <div class="mobile-search__products">
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="mobile-search__product">
-                <div class="mobile-search__product-img">
-                    <img src="img/mobile-search/01.png" alt="">
-                </div>
-                <a href="" class="mobile-search__product-text">
-                    <span>(700 мл.)</span>
-                    <p>Водка Абсолют, Мандарин
-                        / Absolut, Mandrin, 40%</p>
-                </a>
-                <div class="mobile-search__product-price price">
-                    <p>
-                        <span class="mobile-search__product-old old-price">300</span>
-                        <span>грн.</span>
-                    </p>
-                    <p>
-                        <span class="mobile-search__product-now new-price">250</span>
-                        <span>грн.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-search__blur">
-            <a href="search.html">Смотреть все результаты поиска</a>
-        </div>
-    </div>
-</div>
 <div class="main">
-    <section class="banner banner_hidden">
+    <section class="ordering">
         <div class="container">
-            <div class="banner__slider swiper-container">
-                <div class="banner__wrapper swiper-wrapper">
-                    <div class="banner__slide swiper-slide">
-                        <img src="img/banner/02.png" alt="">
-                        <div class="banner__text">
-                            <div class="banner__h4_background">
-                                <h4 class="active">Спецпредложение</h4>
-                            </div>
-                            <div class="banner__h1_background">
-                                <h1 class="active">Виски <span>Jack Daniels</span>
-                                    в ассортименте</h1>
-                            </div>
-                            <div class="banner__a_background">
-                                <a href="" class="active">
-                                    <span>Посмотреть</span>
-                                    <div></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__gradient"></div>
-                    </div>
-                    <div class="banner__slide swiper-slide">
-                        <img src="img/banner/02.png" alt="">
-                        <div class="banner__text">
-                            <div class="banner__h4_background">
-                                <h4 class="active">Спецпредложение</h4>
-                            </div>
-                            <div class="banner__h1_background">
-                                <h1 class="active">Виски <span>Jack Daniels</span>
-                                    в ассортименте</h1>
-                            </div>
-                            <div class="banner__a_background">
-                                <a href="" class="active">
-                                    <span>Посмотреть</span>
-                                    <div></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__gradient"></div>
-                    </div>
-                    <div class="banner__slide swiper-slide">
-                        <img src="img/banner/02.png" alt="">
-                        <div class="banner__text">
-                            <div class="banner__h4_background">
-                                <h4 class="active">Спецпредложение</h4>
-                            </div>
-                            <div class="banner__h1_background">
-                                <h1 class="active">Виски <span>Jack Daniels</span>
-                                    в ассортименте</h1>
-                            </div>
-                            <div class="banner__a_background">
-                                <a href="" class="active">
-                                    <span>Посмотреть</span>
-                                    <div></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__gradient"></div>
-                    </div>
-                    <div class="banner__slide swiper-slide">
-                        <img src="img/banner/02.png" alt="">
-                        <div class="banner__text">
-                            <div class="banner__h4_background">
-                                <h4 class="active">Спецпредложение</h4>
-                            </div>
-                            <div class="banner__h1_background">
-                                <h1 class="active">Виски <span>Jack Daniels</span>
-                                    в ассортименте</h1>
-                            </div>
-                            <div class="banner__a_background">
-                                <a href="" class="active">
-                                    <span>Посмотреть</span>
-                                    <div></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__gradient"></div>
-                    </div>
-                </div>
-                <div class="banner__dots swiper-pagination"></div>
-            </div>
-            <div class="banner__prev">
-                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 1.75L7.75 8L1.5 14.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="banner__next">
-                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 1.75L7.75 8L1.5 14.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
-    </section>
-    <section class="popular popular_hidden">
-        <div class="container">
-            <h1>Популярные категории</h1>
-            <div class="popular__categories">
-                <div class="popular__category">
-                    <img class="popular-big-img" src="img/popular/03.png" alt="">
-                    <div class="popular__text">
-                        <h4>Коньяк</h4>
-                        <a class="popular__arrow" href="">
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a class="popular-mobile-img" href=""><img src="img/popular/09.png" alt=""></a>
-                    </div>
-                    <div class="popular-gradient"></div>
-                </div>
-                <div class="popular__category">
-                    <img class="popular-big-img" src="img/popular/04.png" alt="">
-                    <div class="popular__text">
-                        <h4>Виски</h4>
-                        <a class="popular__arrow" href="">
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a class="popular-mobile-img" href=""><img src="img/popular/10.png" alt=""></a>
-                    </div>
-                    <div class="popular-gradient"></div>
-                </div>
-                <div class="popular__category">
-                    <img class="popular-big-img" src="img/popular/05.png" alt="">
-                    <div class="popular__text">
-                        <h4>Ром</h4>
-                        <a class="popular__arrow" href="">
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a class="popular-mobile-img" href=""><img src="img/popular/11.png" alt=""></a>
-                    </div>
-                    <div class="popular-gradient"></div>
-                </div>
-                <div class="popular__category">
-                    <img class="popular-big-img" src="img/popular/06.png" alt="">
-                    <div class="popular__text">
-                        <h4>Джин</h4>
-                        <a class="popular__arrow" href="">
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a class="popular-mobile-img" href=""><img src="img/popular/12.png" alt=""></a>
-                    </div>
-                    <div class="popular-gradient"></div>
-                </div>
-                <div class="popular__category">
-                    <img class="popular-big-img" src="img/popular/07.png" alt="">
-                    <div class="popular__text">
-                        <h4>Водка</h4>
-                        <a class="popular__arrow" href="">
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a class="popular-mobile-img" href=""><img src="img/popular/13.png" alt=""></a>
-                    </div>
-                    <div class="popular-gradient"></div>
-                </div>
-                <div class="popular__category">
-                    <img class="popular-big-img" src="img/popular/08.png" alt="">
-                    <div class="popular__text">
-                        <h4>Вино</h4>
-                        <a class="popular__arrow" href="">
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a class="popular-mobile-img" href=""><img src="img/popular/14.png" alt=""></a>
-                    </div>
-                    <div class="popular-gradient"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="often">
-        <div class="container">
-            <h1>Часто выбирают</h1>
-            <div class="often__slider">
-                <div class="often__products swiper-container">
-                    <div class="often__wrapper swiper-wrapper">
-                        <div class="often__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="often__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="often__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="often__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="often__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="often__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="often__prev">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 3.75L6.25 10L12.5 16.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="ordering-prev" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.625 14H4.375" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.25 6.125L4.375 14L12.25 21.875" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h4>
+                <a href="index.html">
+                    <span>Главная</span>
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.25 3.125L9.625 7.5L5.25 11.875" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </div>
-                <div class="often__next">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 3.75L6.25 10L12.5 16.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </a>
+                <a href="order.html">
+                    <span>Оформление заказа</span>
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.25 3.125L9.625 7.5L5.25 11.875" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                </a>
+            </h4>
+            <h1>Оформление заказа</h1>
+            <div class="ordering__bottom">
+                <div class="ordering__left">
+                    <div class="ordering__tabs">
+                        <div class="ordering__tab ordering__tab_right ordering__tab_active ">
+                            <span>Личные данные</span>
+                        </div>
+                        <div class="ordering__tab ordering__tab_hide">
+                            <span>Доставка</span>
+                        </div>
+                        <div class="ordering__tab ordering__tab_hide">
+                            <span>Оплата</span>
+                        </div>
+                    </div>
+                    <div class="ordering__change ordering__dates ordering__change_active">
+                        <div class="ordering__dates-text">
+                            <h4>Личные данные</h4>
+                            <p>
+                                <span>Есть аккаунт?</span>
+                                <a href="">Войти</a>
+                            </p>
+                        </div>
+                        <form action="" class="ordering__dates-form">
+                            <div class="ordering__inputs">
+                                <input placeholder="Имя" type="text">
+                                <input placeholder="Телефон" type="text">
+                                <input placeholder="Почта" type="text">
+                            </div>
+                            <button class="enter-ordering__delivery">Выбрать способ доставки</button>
+                        </form>
+                    </div>
+                    <div class="ordering__change ordering__delivery ">
+                        <h4>Способ доставки</h4>
+                        <div class="ordering__delivery-ways">
+                            <div class="ordering__delivery-way ">
+                                <div class="ordering__delivery-img">
+                                    <img src="img/ordering/02.png" alt="">
+                                </div>
+                                <span>Укр почта</span>
+                            </div>
+                            <div class="ordering__delivery-way ordering__delivery-way_active">
+                                <div class="ordering__delivery-img">
+                                    <img src="img/ordering/03.png" alt="">
+                                </div>
+                                <span>Новая почта</span>
+                            </div>
+                            <div class="ordering__delivery-way">
+                                <div class="ordering__delivery-img">
+                                    <img src="img/ordering/04.png" alt="">
+                                </div>
+                                <span>Meest</span>
+                            </div>
+                            <div class="ordering__delivery-way">
+                                <div class="ordering__delivery-img">
+                                    <img src="img/ordering/05.png" alt="">
+                                </div>
+                                <span>Самовывоз из магазина</span>
+                            </div>
+                        </div>
+                        <div class="ordering__delivery-downs">
+                            <div class="ordering__delivery-down"></div>
+                            <div class="ordering__delivery-down ordering__delivery-down_active">
+                                <p>Выберите ваш город и нужный способ доставки</p>
+                                <form action="">
+                                    <div class="ordering__delivery-input-wrapper">
+                                        <input type="text" placeholder="Город">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.375 5.25L7 9.625L2.625 5.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="ordering__delivery-select">
+                                    <span class="selected">
+                                        <span class="selected-text">В отделение</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.375 5.25L7 9.625L2.625 5.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                        <div class="select-down">
+                                            <span>В отделение</span>
+                                            <span>К почтомату</span>
+                                            <span>Курьером</span>
+                                        </div>
+                                    </div>
+                                    <div class="ordering__delivery-post-ways">
+                                        <div class="ordering__delivery-post-way ordering__delivery-post-way_active">
+                                            <div class="ordering__delivery-post-input">
+                                                <input placeholder="Отделение “Новой Почты”" type="text">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.375 5.25L7 9.625L2.625 5.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="ordering__delivery-post-way">
+                                            <div class="ordering__delivery-post-input">
+                                                <input placeholder="Почтомат “Новой Почты”" type="text">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.375 5.25L7 9.625L2.625 5.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="ordering__delivery-post-way">
+                                            <div class="ordering__delivery-post-input">
+                                                <input placeholder="Улица" type="text">
+                                            </div>
+                                            <div class="ordering__delivery-post-inputs">
+                                                <input placeholder="Дом" type="text">
+                                                <input type="text" placeholder="Квартира">
+                                            </div>
+                                            <textarea name="" id="" cols="30" rows="6" placeholder="Примечание (код домофона, сторона входа ...)"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="ordering-enter-pay">Выбрать способ оплаты</button>
+                                </form>
+                            </div>
+                            <div class="ordering__delivery-down"></div>
+                            <div class="ordering__delivery-down ordering__delivery-down-solo">
+                                <p>Вы можете забрать товар в нашем Магазине в Киеве.
+                                    Чтобы забрать товар необходимо будет согласовать время с менеджером.
+                                    Магазин находится по адресу: <span>ул. Павла Скоропадского, 5</span></p>
+                                <div class="ordering__delivery-down-map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.7258273428!2d30.392608628224863!3d50.40217023842684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1620501463675!5m2!1sru!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <button class="ordering-enter-pay">Выбрать способ оплаты</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ordering__change ordering__pay">
+                        <h4>Способ оплаты</h4>
+                        <div class="ordering__pay-ways">
+                            <div class="ordering__pay-way ordering__pay-way_active">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 6V18C3.75 18.3978 3.90804 18.7794 4.18934 19.0607C4.47064 19.342 4.85218 19.5 5.25 19.5H20.25C20.4489 19.5 20.6397 19.421 20.7803 19.2803C20.921 19.1397 21 18.9489 21 18.75V8.25C21 8.05109 20.921 7.86032 20.7803 7.71967C20.6397 7.57902 20.4489 7.5 20.25 7.5H5.25C4.85218 7.5 4.47064 7.34196 4.18934 7.06066C3.90804 6.77936 3.75 6.39782 3.75 6ZM3.75 6C3.75 5.60218 3.90804 5.22064 4.18934 4.93934C4.47064 4.65804 4.85218 4.5 5.25 4.5H18" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.875 14.625C17.4963 14.625 18 14.1213 18 13.5C18 12.8787 17.4963 12.375 16.875 12.375C16.2537 12.375 15.75 12.8787 15.75 13.5C15.75 14.1213 16.2537 14.625 16.875 14.625Z" fill="#9E9E9E"/>
+                                </svg>
+                                <h5>Наличными</h5>
+                                <h6>при получении товара</h6>
+                            </div>
+                            <div class="ordering__pay-way">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.749 15.75H18.749" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.249 15.75H12.749" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.24902 9.08008H21.749" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <h5>На карту</h5>
+                                <h6>при получении товара <span>1 грн.</span></h6>
+                            </div>
+                        </div>
+                        <div class="ordering__pay-button">
+                            Проверить данные
+                        </div>
+                    </div>
+                    <div class="ordering__change ordering__change_done">
+                        <div class="ordering__done-title">
+                            <h4>Проверка данных</h4>
+                            <p>
+                                <span>Неверные данные?</span>
+                                <span class="enter-ordering-dates">Редактировать</span>
+                            </p>
+                        </div>
+                        <div class="ordering__done-dates">
+                            <div class="ordering__done-date">
+                                <h5>Личные данные</h5>
+                                <div class="ordering__done-date-all">
+                                    <p>
+                                        <span>Имя:</span>
+                                        <span>Иван Иванов</span>
+                                    </p>
+                                    <p>
+                                        <span>Телефон:</span>
+                                        <span>067 123 45 67</span>
+                                    </p>
+                                    <p>
+                                        <span>Почта:</span>
+                                        <span>ivan123@gmail.com</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ordering__done-date">
+                                <h5>Доставка</h5>
+                                <div class="ordering__done-date-all">
+                                    <p>
+                                        <span>Способ доставки:</span>
+                                        <span>"Новая почта" (50грн.)</span>
+                                    </p>
+                                    <p>
+                                        <span>Город:</span>
+                                        <span>Киев</span>
+                                    </p>
+                                    <p>
+                                        <span>Отделение "Новой почты":</span>
+                                        <span>Поштове відділення №3, Кременчук</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ordering__done-date">
+                                <h5>Оплата</h5>
+                                <div class="ordering__done-date-all">
+                                    <p>
+                                        <span>Способ оплаты:</span>
+                                        <span>На карту (комисия 1грн.)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordering__done-refactor enter-ordering-dates">
+                            <span>Редактировать данные</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.25 11.375L9.625 7L5.25 2.625" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <a href="thanks.html">Все верно, оформить заказ!</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="week">
-        <div class="container">
-            <h1>Товары недели</h1>
-            <div class="week__banners">
-                <div class="week__banner">
-                    <div class="week__text">
-                        <h2>Виски <span>Jack</span> <span>Daniels</span> в ассортименте</h2>
-                        <p>от <span>400</span> <span>грн.</span></p>
+                <div class="ordering__right">
+                    <h5>
+                        <span>Корзина</span>
                         <a href="">
-                            <span>Посмотреть</span>
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.21777 5.12305L16.0928 11.998L9.21777 18.873" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <p>Редактировать корзину</p>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 2.25L8.25 6L4.5 9.75" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </h5>
+                    <div class="ordering__products">
+                        <a href="" class="ordering__product">
+                            <div class="ordering__product-img">
+                                <img src="img/ordering/01.png" alt="">
+                            </div>
+                            <div class="ordering__product-text">
+                                <span class="ordering__product-capacity">(700 мл.)</span>
+                                <p class="ordering__product-about">Водка Абсолют, Мандарин / Absolut, Mandrin, 40%</p>
+                            </div>
+                            <div class="ordering__product-price price">
+                                <p>
+                                    <span class="ordering__product-old old-price">300</span>
+                                    <span>грн.</span>
+                                </p>
+                                <p>
+                                    <span class="ordering__product-now new-price">250</span>
+                                    <span>грн.</span>
+                                </p>
+                            </div>
+                            <svg class="ordering__product-close" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4099 12.3322L17.7099 8.04222C17.8982 7.85391 18.004 7.59852 18.004 7.33222C18.004 7.06592 17.8982 6.81052 17.7099 6.62222C17.5216 6.43391 17.2662 6.32812 16.9999 6.32812C16.7336 6.32812 16.4782 6.43391 16.2899 6.62222L11.9999 10.9222L7.70994 6.62222C7.52164 6.43391 7.26624 6.32812 6.99994 6.32812C6.73364 6.32813 6.47824 6.43391 6.28994 6.62222C6.10164 6.81052 5.99585 7.06592 5.99585 7.33222C5.99585 7.59852 6.10164 7.85391 6.28994 8.04222L10.5899 12.3322L6.28994 16.6222C6.19621 16.7152 6.12182 16.8258 6.07105 16.9476C6.02028 17.0695 5.99414 17.2002 5.99414 17.3322C5.99414 17.4642 6.02028 17.5949 6.07105 17.7168C6.12182 17.8387 6.19621 17.9493 6.28994 18.0422C6.3829 18.1359 6.4935 18.2103 6.61536 18.2611C6.73722 18.3119 6.86793 18.338 6.99994 18.338C7.13195 18.338 7.26266 18.3119 7.38452 18.2611C7.50638 18.2103 7.61698 18.1359 7.70994 18.0422L11.9999 13.7422L16.2899 18.0422C16.3829 18.1359 16.4935 18.2103 16.6154 18.2611C16.7372 18.3119 16.8679 18.338 16.9999 18.338C17.132 18.338 17.2627 18.3119 17.3845 18.2611C17.5064 18.2103 17.617 18.1359 17.7099 18.0422C17.8037 17.9493 17.8781 17.8387 17.9288 17.7168C17.9796 17.5949 18.0057 17.4642 18.0057 17.3322C18.0057 17.2002 17.9796 17.0695 17.9288 16.9476C17.8781 16.8258 17.8037 16.7152 17.7099 16.6222L13.4099 12.3322Z" fill="#9E9E9E"/>
+                            </svg>
+                        </a>
+                        <a href="" class="ordering__product">
+                            <div class="ordering__product-img">
+                                <img src="img/ordering/01.png" alt="">
+                            </div>
+                            <div class="ordering__product-text">
+                                <span class="ordering__product-capacity">(700 мл.)</span>
+                                <p class="ordering__product-about">Водка Абсолют, Мандарин / Absolut, Mandrin, 40%</p>
+                            </div>
+                            <div class="ordering__product-price price">
+                                <p>
+                                    <span class="ordering__product-old old-price">300</span>
+                                    <span>грн.</span>
+                                </p>
+                                <p>
+                                    <span class="ordering__product-now new-price">250</span>
+                                    <span>грн.</span>
+                                </p>
+                            </div>
+                            <svg class="ordering__product-close" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4099 12.3322L17.7099 8.04222C17.8982 7.85391 18.004 7.59852 18.004 7.33222C18.004 7.06592 17.8982 6.81052 17.7099 6.62222C17.5216 6.43391 17.2662 6.32812 16.9999 6.32812C16.7336 6.32812 16.4782 6.43391 16.2899 6.62222L11.9999 10.9222L7.70994 6.62222C7.52164 6.43391 7.26624 6.32812 6.99994 6.32812C6.73364 6.32813 6.47824 6.43391 6.28994 6.62222C6.10164 6.81052 5.99585 7.06592 5.99585 7.33222C5.99585 7.59852 6.10164 7.85391 6.28994 8.04222L10.5899 12.3322L6.28994 16.6222C6.19621 16.7152 6.12182 16.8258 6.07105 16.9476C6.02028 17.0695 5.99414 17.2002 5.99414 17.3322C5.99414 17.4642 6.02028 17.5949 6.07105 17.7168C6.12182 17.8387 6.19621 17.9493 6.28994 18.0422C6.3829 18.1359 6.4935 18.2103 6.61536 18.2611C6.73722 18.3119 6.86793 18.338 6.99994 18.338C7.13195 18.338 7.26266 18.3119 7.38452 18.2611C7.50638 18.2103 7.61698 18.1359 7.70994 18.0422L11.9999 13.7422L16.2899 18.0422C16.3829 18.1359 16.4935 18.2103 16.6154 18.2611C16.7372 18.3119 16.8679 18.338 16.9999 18.338C17.132 18.338 17.2627 18.3119 17.3845 18.2611C17.5064 18.2103 17.617 18.1359 17.7099 18.0422C17.8037 17.9493 17.8781 17.8387 17.9288 17.7168C17.9796 17.5949 18.0057 17.4642 18.0057 17.3322C18.0057 17.2002 17.9796 17.0695 17.9288 16.9476C17.8781 16.8258 17.8037 16.7152 17.7099 16.6222L13.4099 12.3322Z" fill="#9E9E9E"/>
                             </svg>
                         </a>
                     </div>
-                    <img src="img/week/01.png" alt="">
-                    <div class="week__gradient"></div>
-                </div>
-                <div class="week__banner"></div>
-                <div class="week__banner"></div>
-                <div class="week__banner"></div>
-            </div>
-        </div>
-    </section>
-    <section class="novelty">
-        <div class="container">
-            <h1>Новинки</h1>
-            <div class="novelty__slider">
-                <div class="novelty__products swiper-container">
-                    <div class="novelty__wrapper swiper-wrapper">
-                        <div class="novelty__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
+                    <div class="ordering__prices">
+                        <div class="ordering__price">
+                            <h5>Доставка:</h5>
+                            <h6><span>48</span> грн.</h6>
                         </div>
-                        <div class="novelty__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
+                        <div class="ordering__price">
+                            <h5>Комиссия при оплате:</h5>
+                            <h6><span>1</span> грн.</h6>
                         </div>
-                        <div class="novelty__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="novelty__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="novelty__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="novelty__product swiper-slide product">
-                            <div class="often__img product__img">
-                                <img src="img/often/01.png" alt="">
-                                <div class="often__left product__left">
-                                    <span class="often-new product-new">NEW</span>
-                                    <span class="often-discount product-discount">-20%</span>
-                                </div>
-                                <div class="often__right product__right">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 18.25C11 18.25 1.625 13 1.625 6.62501C1.62519 5.49826 2.01561 4.40635 2.72989 3.53493C3.44416 2.66351 4.4382 2.06636 5.54299 1.84501C6.64778 1.62367 7.79514 1.79179 8.78999 2.32079C9.78484 2.84979 10.5658 3.70702 11 4.74673L11 4.74673C11.4342 3.70702 12.2152 2.84979 13.21 2.32079C14.2049 1.79179 15.3522 1.62367 16.457 1.84501C17.5618 2.06636 18.5558 2.66351 19.2701 3.53493C19.9844 4.40635 20.3748 5.49826 20.375 6.62501C20.375 13 11 18.25 11 18.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <a href="product.html" class="often__text product__text">
-                                <h4>
-                                    <img src="img/often/02.png" alt="">
-                                    <span>США  / Jack Daniels</span>
-                                </h4>
-                                <p>Водка Абсолют, Мандарин
-                                    / Absolut, Mandrin, 40% <span>(700 мл.)</span>
-                                </p>
-                                <div class="often__price price product__price">
-                                    <p>
-                                        <span class="often-old old-price product-old">300</span>
-                                        <span>грн.</span>
-                                    </p>
-                                    <p>
-                                        <span class="often-new new-price product-new">250</span>
-                                        <span>грн.</span>
-                                    </p>
-                                </div>
-                            </a>
+                        <div class="ordering__price">
+                            <h5>Товар:</h5>
+                            <h6><span>500</span> грн.</h6>
                         </div>
                     </div>
-                </div>
-                <div class="novelty__prev">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 3.75L6.25 10L12.5 16.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <div class="novelty__next">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 3.75L6.25 10L12.5 16.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <div class="ordering__all-price">
+                        <div>
+                            <h4>Итого:</h4>
+                            <h5>
+                                <span>550</span>
+                                <span>грн.</span>
+                            </h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="customers">
-        <div class="container">
-            <div class="customers__top">
-                <div class="customers__rating">
-                    <div class="customers__rating__img">
-                        <img src="img/customers/01.png" alt="">
-                        <span>4.5</span>
-                    </div>
-                    <h1>Общая оценка нашего магазина</h1>
-                    <p>Основано на <span>230</span> отзывах</p>
-                    <img class="customers__background" src="img/customers/02.png" alt="">
-                </div>
-                <div class="customers__feedback">
-                    <div class="customers__slider swiper-container">
-                        <div class="customers__wrapper swiper-wrapper">
-                            <div class="customers__slide swiper-slide">
-                                <div class="customers__human">
-                                    <div class="customers__profile">
-                                        <img src="img/customers/04.png" alt="">
-                                        <p>
-                                            <span>Иван Иванов</span>
-                                            <span>дата: 03.03.2021</span>
-                                        </p>
-                                    </div>
-                                    <div class="customers__stars">
-                                        <img src="img/customers/03.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="customers__about">
-                                    <h4>Всем рекомендую</h4>
-                                    <p>Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший в национальную культуру и ставший ее частью. Мы с Вами разберемся, какую же водку стоит покупать, каких видов онабывает, как правильно пить водку и узнаем, как производят легендарный напиток. Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший.</p>
-                                </div>
-                            </div>
-                            <div class="customers__slide swiper-slide">
-                                <div class="customers__human">
-                                    <div class="customers__profile">
-                                        <img src="img/customers/04.png" alt="">
-                                        <p>
-                                            <span>Иван Иванов</span>
-                                            <span>дата: 03.03.2021</span>
-                                        </p>
-                                    </div>
-                                    <div class="customers__stars">
-                                        <img src="img/customers/03.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="customers__about">
-                                    <h4>Всем рекомендую</h4>
-                                    <p>Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший в национальную культуру и ставший ее частью. Мы с Вами разберемся, какую же водку стоит покупать, каких видов онабывает, как правильно пить водку и узнаем, как производят легендарный напиток. Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший.</p>
-                                </div>
-                            </div>
-                            <div class="customers__slide swiper-slide">
-                                <div class="customers__human">
-                                    <div class="customers__profile">
-                                        <img src="img/customers/04.png" alt="">
-                                        <p>
-                                            <span>Иван Иванов</span>
-                                            <span>дата: 03.03.2021</span>
-                                        </p>
-                                    </div>
-                                    <div class="customers__stars">
-                                        <img src="img/customers/03.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="customers__about">
-                                    <h4>Всем рекомендую</h4>
-                                    <p>Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший в национальную культуру и ставший ее частью. Мы с Вами разберемся, какую же водку стоит покупать, каких видов онабывает, как правильно пить водку и узнаем, как производят легендарный напиток. Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший.</p>
-                                </div>
-                            </div>
-                            <div class="customers__slide swiper-slide">
-                                <div class="customers__human">
-                                    <div class="customers__profile">
-                                        <img src="img/customers/04.png" alt="">
-                                        <p>
-                                            <span>Иван Иванов</span>
-                                            <span>дата: 03.03.2021</span>
-                                        </p>
-                                    </div>
-                                    <div class="customers__stars">
-                                        <img src="img/customers/03.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="customers__about">
-                                    <h4>Всем рекомендую</h4>
-                                    <p>Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший в национальную культуру и ставший ее частью. Мы с Вами разберемся, какую же водку стоит покупать, каких видов онабывает, как правильно пить водку и узнаем, как производят легендарный напиток. Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="customers__navigation">
-                            <div class="customers__next">
-                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75293 7.50098L8.00293 1.25098L14.2529 7.50098" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="customers__dots swiper-pagination"></div>
-                            <div class="customers__prev">
-                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75293 7.50098L8.00293 1.25098L14.2529 7.50098" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="customers__bottom">
-                <div class="customer__award">
-                    <div class="customers__circle">
-                        <img src="img/customers/05.png" alt="">
-                    </div>
-                    <p>Более 4000 наименований
-                        и 500 брендов</p>
-                </div>
-                <div class="customer__award">
-                    <div class="customers__circle">
-                        <img src="img/customers/06.png" alt="">
-                    </div>
-                    <p>Бесплатная доставка по Украине
-                        <span>*при заказе от 1000 грн</span></p>
-                </div>
-                <div class="customer__award">
-                    <div class="customers__circle">
-                        <img src="img/customers/07.png" alt="">
-                    </div>
-                    <p>Вся продукция с
-                        сертификатами качества</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="seo">
-        <div class="container">
-            <div class="seo__left">
-                <h1>SEO текст</h1>
-                <p>Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший в национальную культуру и ставший ее частью. Мы с Вами разберемся, какую же водку стоит покупать, каких видов онабывает, как правильно пить водку и узнаем, как производят легендарный напиток.</p>
-                <p>Водка – самый распространенный крепкий напиток в Украине и странах СНГ, напиток, без которого не обходится ни одно застолье, напиток настоящих мужчин, напиток, крепко вошедший в национальную культуру и ставший ее частью.</p>
-                <a href="">
-                    <span>Читать все</span>
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.375 1.25L6 5.625L1.625 1.25" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="seo__right">
-                <h2>+38 (067) 123 45 67</h2>
-                <a href="" class="seo__contact seo__phone">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 5.25H21V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H3.75C3.55109 18.75 3.36032 18.671 3.21967 18.5303C3.07902 18.3897 3 18.1989 3 18V5.25Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M21 5.25L12 13.5L3 5.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>whickeyemail.com</span>
-                </a>
-                <div class="seo__contact">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#9E9E9E" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M12 6.75V12H17.25" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>График роботи: Пн-пт з 9:00 до 18:00</span>
-                </div>
-                <div class="seo__social">
-                    <a href="">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.2642 0.600098H2.53499C1.43653 0.600098 0.599609 1.43702 0.599609 2.53548V12.2647C0.599609 13.3632 1.43653 14.2001 2.53499 14.2001H12.2642C13.3627 14.2001 14.1996 13.3632 14.1996 12.2647V2.53548C14.1996 1.43702 13.3627 0.600098 12.2642 0.600098ZM7.39961 11.4801C9.64884 11.4801 11.4796 9.70164 11.4796 7.55702C11.4796 7.19087 11.4273 6.77241 11.3227 6.45856H12.4735V12.0032C12.4735 12.2647 12.2642 12.5263 11.9504 12.5263H2.84884C2.5873 12.5263 2.32576 12.317 2.32576 12.0032V6.40625H3.52884C3.42423 6.7724 3.37192 7.13856 3.37192 7.50471C3.31961 9.70164 5.15038 11.4801 7.39961 11.4801ZM7.39961 9.91087C5.93499 9.91087 4.78422 8.7601 4.78422 7.34779C4.78422 5.93548 5.93499 4.78471 7.39961 4.78471C8.86423 4.78471 10.015 5.93548 10.015 7.34779C10.015 8.81241 8.86423 9.91087 7.39961 9.91087ZM12.4212 4.31394C12.4212 4.62779 12.1596 4.88933 11.8458 4.88933H10.3811C10.0673 4.88933 9.80577 4.62779 9.80577 4.31394V2.90164C9.80577 2.58779 10.0673 2.32625 10.3811 2.32625H11.8458C12.1596 2.32625 12.4212 2.58779 12.4212 2.90164V4.31394Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.480756 7.29936L4.15924 8.67099L5.59321 13.2847C5.65555 13.5964 6.02964 13.6587 6.27902 13.4717L8.33646 11.7883C8.5235 11.6013 8.83525 11.6013 9.08463 11.7883L12.7631 14.4692C13.0125 14.6563 13.3866 14.5316 13.4489 14.2199L16.1922 1.12702C16.2545 0.815288 15.9428 0.503556 15.6311 0.62825L0.480756 6.48885C0.106675 6.61355 0.106675 7.17467 0.480756 7.29936ZM5.40617 7.98517L12.6384 3.55855C12.7631 3.4962 12.8878 3.68325 12.7631 3.74559L6.84014 9.29446C6.6531 9.4815 6.46606 9.73089 6.46606 10.0426L6.27902 11.5389C6.27902 11.726 5.96729 11.7883 5.90494 11.5389L5.15677 8.79568C4.96973 8.48395 5.09444 8.10987 5.40617 7.98517Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.1996 3.05472C14.1996 1.8568 13.1426 0.799805 11.9447 0.799805H2.85453C1.6566 0.799805 0.599609 1.8568 0.599609 3.05472V12.1449C0.599609 13.3428 1.6566 14.3998 2.85453 14.3998H7.43484V9.25576H5.74365V7.00084H7.43484V6.08478C7.43484 4.53452 8.5623 3.19565 9.97163 3.19565H11.8038V5.45057H9.97163C9.76023 5.45057 9.54883 5.66198 9.54883 6.08478V7.00084H11.8038V9.25576H9.54883V14.3998H11.9447C13.1426 14.3998 14.1996 13.3428 14.1996 12.1449V3.05472Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-                <a href="" class="seo__link">
-                    <span>Перейти на страницу контактов</span>
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.25 2.625L9.625 7L5.25 11.375" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-    <div class="main_background active"></div>
 </div>
 <footer class="footer">
     <div class="container">
@@ -1986,8 +1270,8 @@
                 <a href="" class="footer_fire">Новинки и акции</a>
             </div>
         </div>
-        <div class="footer__column footer__plus">
-            <h4>Дополнительно</h4>
+        <div class="footer__column">
+            <h4></h4>
             <div class="footer__links">
                 <a href="text.html#about">О нас</a>
                 <a href="text.html#delivery">Доставка и оплата</a>
@@ -2665,3 +1949,12 @@
 <script src="js/app.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

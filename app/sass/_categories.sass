@@ -1,0 +1,122 @@
+.categories
+  padding: 0 14px
+  .container
+    max-width: 1372px
+    flex-direction: column
+    padding-bottom: 120px
+    padding-top: 20px
+    @media (max-width: 1024px)
+      padding-bottom: 60px
+    .categories-enter
+      display: none
+      @media (max-width: 1024px)
+        display: block
+    h4
+      margin: 30px 0
+      display: flex
+      align-items: center
+      @media (max-width: 1024px)
+        display: none
+      a
+        display: flex
+        align-items: center
+        &:last-child
+          svg
+            display: none
+        &:not(:last-child)
+          margin-right: 10px
+        &:hover
+          span
+            color: #1976D2
+          path
+            stroke: #1976D2
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          color: #212121
+          transition-duration: 0.3s
+        svg
+          margin-left: 10px
+          path
+            transition-duration: 0.3s
+    h1
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 100%
+      color: #212121
+      margin-bottom: 40px
+      @media (max-width: 1024px)
+        font-size: 22px
+        margin-bottom: 30px
+        margin-top: 20px
+    .categories__all
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 20px
+      @media (max-width: 1024px)
+        grid-template-columns: 1fr 1fr
+      @media (max-width: 768px)
+        grid-template-columns: 1fr
+        grid-gap: 6px
+      .categories__product
+        display: flex
+        flex-direction: column
+        padding: 55px 36px 40px 40px
+        background: #F5F5F5
+        align-items: center
+        border-radius: 10px
+        @media (max-width: 1024px)
+          padding: 0
+        .categories__img
+          height: 290px
+          max-width: 100%
+          @media (max-width: 1024px)
+            display: none
+          img
+            width: 100%
+            height: 100%
+        .categories__text
+          display: flex
+          width: 100%
+          justify-content: space-between
+          margin-top: 40px
+          align-items: center
+          @media (max-width: 1024px)
+            margin-top: 0
+            padding: 40px 30px
+          &:hover
+            span
+              color: #1976D2
+            path
+              stroke: #1976D2
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 100%
+            color: #212121
+            transition-duration: 0.3s
+            @media (max-width: 1024px)
+              font-size: 18px
+          path
+            transition-duration: 0.3s
+
+
+
+
+
+
+
+
+
+
+
+
+
+

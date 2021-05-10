@@ -1,0 +1,471 @@
+.about
+  background: #F5F5F5
+  .container
+    max-width: 1372px
+    flex-direction: column
+    padding-bottom: 100px
+    margin-bottom: 100px
+    @media (max-width: 1024px)
+      margin-bottom: 70px
+      padding-bottom: 0
+    .about__tabs
+      display: flex
+      background: #FFFFFF
+      padding: 0 8px
+      border-radius: 10px
+      margin-bottom: 20px
+      @media (max-width: 1024px)
+        flex-direction: column
+        margin: 0 14px 50px 14px
+        background: none
+      .about__tab
+        padding: 42px 40px
+        position: relative
+        cursor: pointer
+        @media (max-width: 1024px)
+          background: #FFFFFF
+          padding: 40px 30px
+          border-radius: 10px
+          display: flex
+          justify-content: space-between
+          align-items: center
+        &:not(:last-child)
+          @media (max-width: 1024px)
+            margin-bottom: 6px
+        &:hover
+          span
+            color: #1976D2
+          path
+            stroke: #1976D2
+        &:after
+          content: ''
+          position: absolute
+          width: 0
+          background: #1976D2
+          height: 4px
+          left: 0
+          bottom: 0
+          border-radius: 100px
+          transition-duration: 0.3s
+          @media (max-width: 1024px)
+            display: none
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 100%
+          color: #212121
+          transition-duration: 0.3s
+          @media (max-width: 1024px)
+            font-size: 18px
+        svg
+          display: none
+          @media (max-width: 1024px)
+            display: block
+          path
+            transition-duration: 0.3s
+      .about__tab-active
+        &:after
+          width: 100%
+        span
+          color: #1976D2
+          @media (max-width: 1024px)
+            color: #212121
+    .about__content-characteristics
+      display: none
+      justify-content: space-between
+      @media (max-width: 1024px)
+        position: fixed
+        overflow: auto
+        min-height: 100vh
+        height: 100%
+        background: #FFFFFF
+        width: 100%
+        max-width: 100vw
+        top: 0
+        z-index: 200
+        flex-direction: column-reverse
+      .about__product
+        display: flex
+        flex-direction: column
+        padding: 40px
+        background: #FFFFFF
+        border-radius: 20px
+        width: 49.2%
+        @media (max-width: 1024px)
+          width: 100%
+          padding: 0 14px 40px 14px
+          border-radius: 0
+        h1
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 600
+          font-size: 22px
+          line-height: 100%
+          color: #212121
+          margin-bottom: 27px
+        .about__characteristics
+          display: flex
+          flex-direction: column
+          border-radius: 10px
+          overflow: hidden
+          @media (max-width: 1024px)
+            border-radius: 6px
+          .about__characteristic
+            display: flex
+            justify-content: space-between
+            background: #EEEEEE
+            padding: 20px
+            &:nth-child(2n)
+              background: #F5F5F5
+            span
+              &:first-child
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                color: #616161
+                max-width: 265px
+              &:last-child
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                text-align: right
+                color: #212121
+                max-width: 249px
+
+      .about__text
+        width: 49.2%
+        padding: 40px 63px 40px 40px
+        border-radius: 20px
+        background: #FFFFFF
+        @media (max-width: 1024px)
+          width: 100%
+          position: relative
+          padding: 30px 14px 50px 14px
+          border-radius: 0
+        h2
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 600
+          font-size: 22px
+          line-height: 100%
+          color: #212121
+          margin-bottom: 25px
+          @media (max-width: 1024px)
+            margin-bottom: 19px
+        p
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 160%
+          color: #616161
+          &:not(:last-child)
+            margin-bottom: 20px
+
+    .about__content-brand
+      display: none
+      flex-direction: column
+      border-radius: 20px
+      background: #FFFFFF
+      padding: 0 40px
+      @media (max-width: 1024px)
+        position: fixed
+        overflow: auto
+        width: 100%
+        min-width: 100vw
+        background: #F5F5F5
+        border-radius: 0
+        min-height: 100vh
+        height: 100%
+        top: 0
+        z-index: 200
+        flex-direction: column
+        padding: 0
+      .about__brand
+        display: flex
+        padding: 40px 0
+        position: relative
+        @media (max-width: 1024px)
+          flex-direction: column-reverse
+          background: #FFFFFF
+          padding: 30px 14px 40px 14px
+        &:not(:last-child)
+          border-bottom: 0.5px solid #BDBDBD
+          @media (max-width: 1024px)
+            border: 0
+            margin-bottom: 10px
+        .about__brand-left
+          max-width: 781px
+          display: flex
+          flex-direction: column
+          margin-right: 40px
+          @media (max-width: 1024px)
+            margin-right: 0
+            max-width: 100%
+          h2
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 22px
+            line-height: 100%
+            color: #212121
+            margin-bottom: 25px
+            @media (max-width: 1024px)
+              margin-bottom: 19px
+          .about__brand-text
+            margin-bottom: 40px
+            p
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 160%
+              color: #616161
+              &:not(:last-child)
+                margin-bottom: 20px
+          a
+            display: flex
+            align-items: center
+            margin-right: auto
+            span
+              font-family: Proxima Nova, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 100%
+              color: #1976D2
+              margin-right: 10px
+        .about__brand-right
+          margin-left: auto
+          min-width: 156px
+          max-width: 156px
+          min-height: 120px
+          max-height: 120px
+          @media (max-width: 1024px)
+            margin-left: 0
+            min-width: 90px
+            max-width: 90px
+            min-height: 70px
+            max-height: 70px
+            margin-bottom: 30px
+          img
+            width: 100%
+            height: 100%
+            object-fit: contain
+    .about__content-delivery
+      display: none
+      justify-content: space-between
+      @media (max-width: 1024px)
+        position: fixed
+        overflow: auto
+        width: 100%
+        min-width: 100vw
+        background: #F5F5F5
+        border-radius: 0
+        min-height: 100vh
+        height: 100%
+        top: 0
+        z-index: 200
+        flex-direction: column
+        padding: 0
+      .about__delivery-left
+        width: 66.1%
+        border-radius: 20px
+        background: #FFFFFF
+        display: flex
+        flex-direction: column
+        padding: 40px
+        @media (max-width: 1024px)
+          width: 100%
+          border-radius: 0
+          padding: 30px 14px 40px 14px
+        h2
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 600
+          font-size: 22px
+          line-height: 100%
+          color: #212121
+          margin-bottom: 28px
+        .about__columns
+          display: flex
+          justify-content: space-between
+          @media (max-width: 1024px)
+            flex-direction: column
+          .about__column
+            display: flex
+            flex-direction: column
+            width: 50%
+            @media (max-width: 1024px)
+              width: 100%
+            .about__pluses
+              display: flex
+              flex-direction: column
+              .about__plus
+                display: flex
+                align-items: center
+                @media (max-width: 1024px)
+                  flex-direction: column
+                  align-items: normal
+                &:not(:last-child)
+                  margin-bottom: 30px
+                  @media (max-width: 1024px)
+                    padding-bottom: 30px
+                    margin: 0
+                    border-bottom: 0.5px solid #BDBDBD
+                &:not(:first-child)
+                  @media (max-width: 1024px)
+                    padding-top: 30px
+                &:last-child
+                  @media (max-width: 1024px)
+                    margin-bottom: 40px
+                .about__plus-img
+                  width: 36px
+                  display: flex
+                  margin-right: 20px
+                  @media (max-width: 1024px)
+                    margin: 0 0 12px 0
+                  img
+                    display: block
+                    margin: auto auto
+                .about__plus-text
+                  display: flex
+                  flex-direction: column
+                  h4
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 100%
+                    color: #212121
+                  h5
+                    font-family: Proxima Nova, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 100%
+                    color: #757575
+                    margin-top: 12px
+                    span
+                      font-weight: 600
+            a
+              margin-top: auto
+              display: flex
+              align-items: center
+              margin-right: auto
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 100%
+                color: #1976D2
+                margin-right: 8px
+            .about-mobile-h2
+              display: none
+              @media (max-width: 1024px)
+                display: block
+      .about__delivery-right
+        width: 32.3%
+        background: #FFFFFF
+        border-radius: 20px
+        padding: 40px
+        display: flex
+        flex-direction: column
+        @media (max-width: 1024px)
+          width: 100%
+          margin-top: 10px
+          border-radius: 0
+          padding: 30px 14px 40px 14px
+        h2
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: 600
+          font-size: 22px
+          line-height: 100%
+          color: #212121
+          margin-bottom: 25px
+        p
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 160%
+          color: #424242
+          @media (max-width: 1024px)
+            margin-bottom: 40px
+        a
+          display: flex
+          align-items: center
+          margin-top: auto
+          span
+            font-family: Proxima Nova, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 100%
+            color: #1976D2
+            margin-right: 8px
+    .about__content
+      .about__product-mobile-bottom
+        height: 114px
+        display: none
+        align-items: center
+        width: 100%
+        background: #F5F5F5
+        padding: 30px 14px
+        @media (max-width: 1024px)
+          display: flex
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 100%
+          text-align: center
+          color: #AD1457
+          padding: 20px 0
+          width: 100%
+          border: 1px solid #AD1457
+          border-radius: 6px
+      .about__text-mobile-top
+        padding: 32px 14px
+        background: #F5F5F5
+        width: 100%
+        display: none
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 1024px)
+          display: flex
+        span
+          font-family: Proxima Nova, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 100%
+          color: #212121
+    .about__content_active
+      display: flex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

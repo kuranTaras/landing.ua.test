@@ -1,0 +1,186 @@
+.mobile-search
+  position: absolute
+  display: none
+  top: 90px
+  z-index: 100
+  width: 100%
+  @media (max-width: 1024px)
+    display: flex
+  .mobile-search__bottom
+    display: none
+  .mobile-search__top
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    input
+      height: 46px
+      padding: 0 16px
+      max-width: 300px
+      width: 100%
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 100%
+      color: #616161
+      background: #FFFFFF
+      border: 0.5px solid #BDBDBD
+      border-right: 0
+      border-radius: 4px 0 0 4px
+    button
+      height: 46px
+      width: 46px
+      background: #C2185B
+      border-radius: 0 4px 4px 0
+      border: none
+    .mobile-search-svg-one, .mobile-search-svg-two
+      display: none
+.mobile-search_active
+  top: 0
+  width: 100vw
+  position: fixed
+  background: #FFFFFF
+  height: 100%
+  min-height: 100vh
+  align-items: flex-start
+  flex-direction: column
+  .mobile-search__top
+    button
+      display: none
+    input
+      max-width: 100%
+      border: none
+      border-radius: 0
+      background: #F5F5F5
+      padding: 33px 26px 33px 58px
+      border-bottom: 0.5px solid #BDBDBD
+      height: 80px
+      font-family: Proxima Nova, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 100%
+      color: #212121
+    .mobile-search-svg-one, .mobile-search-svg-two
+      display: block
+      position: absolute
+    .mobile-search-svg-one
+      left: 14px
+      top: 28px
+    .mobile-search-svg-two
+      right: 14px
+      top: 28px
+  .mobile-search__bottom
+    display: block
+    background: #FFFFFF
+    width: 100%
+    .mobile-search__products
+      display: flex
+      flex-direction: column
+      padding: 14px
+      .mobile-search__product
+        display: flex
+        padding: 14px 0
+        align-items: center
+        &:not(:last-child)
+          border-bottom: 0.5px solid #BDBDBD
+        .mobile-search__product-img
+          width: 70px
+          height: 60px
+          background: #F5F5F5
+          display: flex
+          align-items: center
+          justify-content: center
+          border-radius: 4px
+          margin-right: 20px
+        .mobile-search__product-text
+          max-width: 190px
+          span, p
+            font-family: Proxima Nova, sans-serif
+            font-style: italic
+            font-weight: normal
+            font-size: 12px
+            line-height: 130%
+            color: #757575
+          p
+            font-style: normal
+            color: #212121
+        .mobile-search__product-price
+          display: flex
+          flex-direction: column
+          align-items: flex-end
+          justify-content: center
+          margin-left: auto
+          p
+            &:first-child
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 100%
+                text-align: right
+                color: #212121
+                &:last-child
+                  font-weight: 300
+            &:last-child
+              span
+                font-family: Proxima Nova, sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 18px
+                line-height: 100%
+                text-align: right
+                color: #212121
+                &:first-child
+                  font-weight: 700
+            &:not(:last-child)
+              position: relative
+              &:after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 0.5px
+                background-color: #212121
+                left: 0
+                top: 10px
+    .mobile-search__blur
+      width: 100%
+      height: 180px
+      background: linear-gradient(179.66deg, rgba(255, 255, 255, 0) 0.3%, #FFFFFF 65.27%)
+      padding: 0 14px
+      position: absolute
+      bottom: 0
+      display: flex
+      a
+        font-family: Proxima Nova, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 100%
+        text-align: center
+        color: #FFFFFF
+        padding: 20px 0
+        background: #C2185B
+        border: 1px solid #AD1457
+        border-radius: 6px
+        width: 100%
+        margin: auto 0 30px 0
+  .mobile-search__bottom-hide
+    display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
