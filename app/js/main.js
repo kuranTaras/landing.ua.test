@@ -754,6 +754,19 @@ $(window).on("load" , function () {
         $('.policy').removeClass('popup_active')
         $('.contract').removeClass('popup_active')
     })
+    if (!window.localStorage.getItem('preloaderIsShown')) {
+        $('.years').removeClass('years-hide')
+        window.localStorage.setItem('preloaderIsShown', true);
+    } else {
+        $('.years').css('display', 'none')
+    }
+
+    if (!window.localStorage.getItem('cookie')) {
+        $('.cookie').removeClass('cookie-hide')
+        window.localStorage.setItem('cookie', true);
+    } else {
+        $('.cookie').css('display', 'none')
+    }
 })
 
 
