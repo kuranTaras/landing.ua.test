@@ -77,18 +77,22 @@
         width: 74.6%
         background-color: #FFFFFF
         border-radius: 20px
+        height: 420px
         @media (max-width: 1024px)
           width: 100%
           border-radius: 0
+        @media (max-width: 768px)
+          height: 100%
         .customers__slider
           width: 100%
-          height: 100%
           display: flex
           position: relative
+          height: 100%
           .customers__wrapper
-            width: 87.7%
+            width: 100%
             .customers__slide
               display: flex
+              overflow: auto
               flex-direction: column
               padding: 40px 186px 60px 65px
               @media (max-width: 768px)
@@ -215,7 +219,7 @@
               left: 50%
               transform: translate(-50%, -50%)
               display: flex
-              flex-direction: column-reverse
+              flex-direction: column
               @media (max-width: 768px)
                 flex-direction: row
                 transform: translateX(-50%)

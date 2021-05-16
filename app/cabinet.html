@@ -995,7 +995,7 @@
                                     <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="#9E9E9E" stroke-width="2" stroke-miterlimit="10"/>
                                     <path d="M2.9043 20.2491C3.82638 18.6531 5.15225 17.3278 6.74869 16.4064C8.34513 15.485 10.1559 15 11.9992 15C13.8424 15 15.6532 15.4851 17.2497 16.4065C18.8461 17.3279 20.1719 18.6533 21.094 20.2493" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span>Иван Иванов</span>
+                                <span class="cabinet-name">Иван Иванов</span>
                             </h5>
                             <div class="cabinet__enter-down cabinet__enter-name">
                                 <span>Изменить имя</span>
@@ -1011,9 +1011,9 @@
                         </div>
                         <div class="cabinet__row-bottom">
                             <form action="">
-                                <input placeholder="Новое имя" type="text">
+                                <input class="cabinet-new-name" placeholder="Новое имя" type="text">
                                 <div>
-                                    <button class="cabinet__name-confirm">Изменить</button>
+                                    <button class="cabinet__name-confirm cabinet__name-cancel log-button-disabled">Изменить</button>
                                     <button class="cabinet__name-cancel">
                                         <span>Отменить</span>
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2004,9 +2004,9 @@
             <h4>Вход</h4>
             <p>Для входа введите свой номер телефона</p>
             <form action="">
-                <input class="log-phone phone_mask" type="text" placeholder="Телефон">
-                <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                <input class="log-phone phone_mask log-first-tel" type="text" placeholder="Телефон">
+                <div class="log__password-wrapper password-wrapper">
+                    <input type="password" class="password log-password log-first-password" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2020,7 +2020,7 @@
                     </svg>
                 </div>
                 <span class="log-forget log-enter-forget-first">Забыли пароль?</span>
-                <button class="log-enter log-button-disabled log-done">Войти в аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-first-button">Войти в аккаунт</button>
                 <button class="log-enter-email log-enter-another">Вход по Email</button>
             </form>
         </div>
@@ -2058,9 +2058,9 @@
             <h4>Вход</h4>
             <p>Для входа введите свою почту</p>
             <form action="">
-                <input class="log-email" type="text" placeholder="Почта">
+                <input class="log-email log-email-email" type="text" placeholder="Почта">
                 <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                    <input type="password" class="password log-password log-email-password" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2074,7 +2074,7 @@
                     </svg>
                 </div>
                 <span class="log-forget log-enter-forget-first">Забыли пароль?</span>
-                <button class="log-enter log-button-disabled log-done">Войти в аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-email-button">Войти в аккаунт</button>
                 <button class="log-enter-tel log-enter-another">Вход по телефону</button>
             </form>
         </div>
@@ -2112,9 +2112,9 @@
             <h4>Вход</h4>
             <p>Введите номер телефона / почту, куда мы отправим пароль для входа в аккаунт</p>
             <form action="">
-                <input class="log-phone-email" type="text" placeholder="Телефон / почта">
+                <input class="log-phone-email log-forget-phone" type="text" placeholder="Телефон / почта">
                 <span class="log-forget log-recall">Вспомнили пароль?</span>
-                <button class="log-enter log-enter-forget-second log-button-disabled">Получить пароль</button>
+                <button class="log-enter log-enter-forget-second log-button-disabled log-forget-button">Получить пароль</button>
             </form>
         </div>
         <div class="log__bottom">
@@ -2155,7 +2155,7 @@
             </div>
             <form action="">
                 <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                    <input type="password" class="password log-password log-forget-password-second" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2169,7 +2169,7 @@
                     </svg>
                 </div>
                 <span class="log-forget log-enter-forget-first">Неверный номер телефона / почта?</span>
-                <button class="log-enter log-button-disabled log-done">Войти в аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-forget-button-second">Войти в аккаунт</button>
             </form>
         </div>
         <div class="log__bottom">
@@ -2205,10 +2205,10 @@
         <div class="log__top">
             <h4>Регистрация аккаунта</h4>
             <form action="">
-                <input class="log-phone log-name" type="text" placeholder="Ваше имя">
-                <input class="log-phone phone_mask" type="text" placeholder="Телефон">
-                <input class="log-phone log-email" type="text" placeholder="Почта">
-                <button class="log-enter log-enter-register-second log-button-disabled">Создать пароль</button>
+                <input class="log-phone log-name log-register-name" type="text" placeholder="Ваше имя">
+                <input class="log-phone phone_mask log-register-phone" type="text" placeholder="Телефон">
+                <input class="log-phone log-email log-register-email" type="text" placeholder="Почта">
+                <button class="log-enter log-enter-register-second log-button-disabled log-register-button">Создать пароль</button>
             </form>
         </div>
         <div class="log__bottom">
@@ -2246,7 +2246,7 @@
             <p>Придумайте пароль, который вмещает от 4 до 8 символов</p>
             <form action="">
                 <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                    <input type="password" class="password log-password log-register-password-second" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2260,7 +2260,7 @@
                     </svg>
                 </div>
                 <div class="log__password-wrapper log__password-repeat-wrapper password-wrapper ">
-                    <input type="password" class="password log-password log-password-repeat" placeholder="Пароль">
+                    <input type="password" class="password log-password log-password-repeat log-register-repeat" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2273,7 +2273,7 @@
                         <path d="M11 14.4375C12.8985 14.4375 14.4375 12.8985 14.4375 11C14.4375 9.10152 12.8985 7.5625 11 7.5625C9.10152 7.5625 7.5625 9.10152 7.5625 11C7.5625 12.8985 9.10152 14.4375 11 14.4375Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <button class="log-enter log-button-disabled log-done">Создать аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-register-button-second">Создать аккаунт</button>
                 <div class="log__checkbox">
                     <div class="log__mark">
                         <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2321,8 +2321,8 @@
         <p>Введите новый номер в поле</p>
         <h2>Старый номер <span class="number__change-old">063 123 45 67</span></h2>
         <form action="">
-            <input class="phone_mask" placeholder="Новый номер" type="text">
-            <button class="enter-number__change-second">Подтвердить номер</button>
+            <input class="phone_mask number-change-phone" placeholder="Новый номер" type="text">
+            <button class="enter-number__change-second log-button-disabled number__change-button">Подтвердить номер</button>
         </form>
         <svg class="number__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2332,9 +2332,9 @@
         <h4>Смена номера телефона</h4>
         <p>На указанный номер был отправлен код, введите его в поле</p>
         <form action="">
-            <input placeholder="Код" type="text">
+            <input class="number__change-code" placeholder="Код" type="text">
             <h5 class="enter-number__change-first">Нe пришло? Отправить еще раз!</h5>
-            <button class="enter-number__change-third">Подтвердить номер</button>
+            <button class="enter-number__change-third log-button-disabled number__change-button-second">Подтвердить номер</button>
         </form>
         <svg class="number__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2359,8 +2359,8 @@
         <p>Введите новую почту в поле</p>
         <h2>Старая почта: <span class="email__change-old">Ivan_Ivanov123@gmail.com</span></h2>
         <form action="">
-            <input placeholder="Новая почта" type="text">
-            <button class="enter-email__change-second">Подтвердить почту</button>
+            <input class="email__change-email" placeholder="Новая почта" type="text">
+            <button class="enter-email__change-second log-button-disabled email__change-button">Подтвердить почту</button>
         </form>
         <svg class="email__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2370,9 +2370,9 @@
         <h4>Смена почты</h4>
         <p>На указанную почту был отправлен код, введите его в поле</p>
         <form action="">
-            <input placeholder="Код" type="text">
+            <input class="email__change-code" placeholder="Код" type="text">
             <h5 class="enter-email__change-first">Нe пришло? Отправить еще раз!</h5>
-            <button class="enter-email__change-third">Сменить почту</button>
+            <button class="enter-email__change-third log-button-disabled email__change-button-second">Сменить почту</button>
         </form>
         <svg class="email__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2423,7 +2423,7 @@
         <p>Введите прежний пароль в поле</p>
         <form action="">
             <div class="password__change-password password-wrapper ">
-                <input type="password" class="password" placeholder="Пароль">
+                <input type="password" class="password password__change-password-first" placeholder="Пароль">
                 <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2437,7 +2437,7 @@
                 </svg>
             </div>
             <span class="enter-password__remove-first">Забыли пароль?</span>
-            <button class="enter-password__change-second">Придумать новый пароль</button>
+            <button class="enter-password__change-second password__change-button log-button-disabled">Придумать новый пароль</button>
         </form>
         <svg class="password__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2448,7 +2448,7 @@
         <p>Придумайте новый пароль от 4 до 8 символов</p>
         <form action="">
             <div class="password__change-password password-wrapper ">
-                <input type="password" class="password" placeholder="Пароль">
+                <input type="password" class="password password__change-password-second" placeholder="Пароль">
                 <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2462,7 +2462,7 @@
                 </svg>
             </div>
             <div class="password__change-password password__change-password-repeat password-wrapper ">
-                <input type="password" class="password" placeholder="Пароль">
+                <input type="password" class="password password__change-repeat-first" placeholder="Пароль">
                 <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2475,7 +2475,7 @@
                     <path d="M11 14.4375C12.8985 14.4375 14.4375 12.8985 14.4375 11C14.4375 9.10152 12.8985 7.5625 11 7.5625C9.10152 7.5625 7.5625 9.10152 7.5625 11C7.5625 12.8985 9.10152 14.4375 11 14.4375Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
-            <button class="enter-password__change-third">Сменить пароль</button>
+            <button class="enter-password__change-third log-button-disabled password__change-button-second">Сменить пароль</button>
         </form>
         <svg class="password__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2496,9 +2496,9 @@
         <h4>Восстановление пароля</h4>
         <p>Введите номер телефона / почту, куда мы отправим пароль для входа в аккаунт</p>
         <form action="">
-            <input type="text" placeholder="Телефон / почта">
+            <input class="password__remove-phone" type="text" placeholder="Телефон / почта">
             <span class="enter-password__change-first">Вспомнили пароль?</span>
-            <button class="enter-password__remove-second">Получить пароль</button>
+            <button class="enter-password__remove-second log-button-disabled password__remove-button">Получить пароль</button>
         </form>
         <svg class="password__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>
@@ -2510,7 +2510,7 @@
         <h3>Указаное значение (почта или телефон)</h3>
         <form action="">
             <div class="password-wrapper">
-                <input type="password" class="password" placeholder="Пароль">
+                <input type="password" class="password password__remove-password" placeholder="Пароль">
                 <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2524,7 +2524,7 @@
                 </svg>
             </div>
             <span class="enter-password__remove-first">Неверный номер телефона / почта?</span>
-            <button class="enter-password__change-third">Восстановить пароль</button>
+            <button class="enter-password__change-third log-button-disabled password__remove-password-second">Восстановить пароль</button>
         </form>
         <svg class="password__change-close" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6459 13.9999L20.6626 8.99489C20.8823 8.7752 21.0057 8.47724 21.0057 8.16656C21.0057 7.85587 20.8823 7.55791 20.6626 7.33822C20.4429 7.11854 20.1449 6.99512 19.8342 6.99512C19.5236 6.99512 19.2256 7.11854 19.0059 7.33822L14.0009 12.3549L8.99591 7.33822C8.77622 7.11854 8.47826 6.99512 8.16757 6.99512C7.85689 6.99512 7.55893 7.11854 7.33924 7.33822C7.11955 7.55791 6.99613 7.85587 6.99613 8.16656C6.99613 8.47724 7.11955 8.7752 7.33924 8.99489L12.3559 13.9999L7.33924 19.0049C7.22989 19.1133 7.1431 19.2424 7.08387 19.3846C7.02464 19.5267 6.99414 19.6792 6.99414 19.8332C6.99414 19.9872 7.02464 20.1397 7.08387 20.2819C7.1431 20.4241 7.22989 20.5531 7.33924 20.6616C7.4477 20.7709 7.57673 20.8577 7.7189 20.9169C7.86107 20.9762 8.01356 21.0067 8.16757 21.0067C8.32159 21.0067 8.47408 20.9762 8.61625 20.9169C8.75841 20.8577 8.88745 20.7709 8.99591 20.6616L14.0009 15.6449L19.0059 20.6616C19.1144 20.7709 19.2434 20.8577 19.3856 20.9169C19.5277 20.9762 19.6802 21.0067 19.8342 21.0067C19.9883 21.0067 20.1407 20.9762 20.2829 20.9169C20.4251 20.8577 20.5541 20.7709 20.6626 20.6616C20.7719 20.5531 20.8587 20.4241 20.9179 20.2819C20.9772 20.1397 21.0077 19.9872 21.0077 19.8332C21.0077 19.6792 20.9772 19.5267 20.9179 19.3846C20.8587 19.2424 20.7719 19.1133 20.6626 19.0049L15.6459 13.9999Z" fill="#9E9E9E"/>

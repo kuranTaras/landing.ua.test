@@ -62,11 +62,11 @@
       border-radius: 20px
       height: 460px
       margin-bottom: 20px
-      order: 1
       @media (max-width: 1024px)
         margin-bottom: 0
         padding: 0 0 50px 0
         border-radius: 0
+        order: 1
     .contact__bottom
       display: flex
       border-radius: 20px
@@ -262,18 +262,22 @@
               margin: auto 0 auto 14px
               a
                 color: #1976D2
+                transition-duration: 0.3s
+                &:hover
+                  color: #212121
                 @media (max-width: 1024px)
                   display: block
           button
             outline: none
             padding: 20px 33px
-            background: #EEEEEE
+            background: #AD1457
             border: 1px solid #EEEEEE
             margin-right: auto
             display: flex
             align-items: center
             border-radius: 6px
             margin-top: 19px
+            cursor: pointer
             transition-duration: 0.3s
             @media (max-width: 1024px)
               padding: 20px 0
@@ -287,7 +291,7 @@
               font-size: 16px
               line-height: 100%
               text-align: center
-              color: #9E9E9E
+              color: #FFFFFF
               margin-right: 14px
               transition-duration: 0.3s
               @media (max-width: 1024px)
@@ -297,7 +301,6 @@
                 display: none
             path
               transition-duration: 0.3s
-              stroke: #9E9E9E
           .contact__button_active
             background: #AD1457
             border-color: #AD1457

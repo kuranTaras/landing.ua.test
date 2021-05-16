@@ -247,6 +247,8 @@
                     align-items: center
                     justify-content: center
                     transition-duration: 0.3s
+                    &:hover
+                      border-color: #AD1457
                     svg
                       transition-duration: 0.3s
                       opacity: 0
@@ -539,7 +541,8 @@
             margin-left: 10px
         .product
           .product__img
-            height: 200px
+            @media (max-width: 1024px)
+              height: 200px
           .product__text
             @media (max-width: 1024px)
               padding-top: 12px

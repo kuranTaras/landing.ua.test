@@ -1247,7 +1247,7 @@
                             </div>
                             <span>Количество</span>
                         </div>
-                        <div class="alcohol__add alcohol__add-success">
+                        <div class="alcohol__add">
                             <svg class="alcohol__cart-img" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.75 18.125C7.44036 18.125 8 17.5654 8 16.875C8 16.1846 7.44036 15.625 6.75 15.625C6.05964 15.625 5.5 16.1846 5.5 16.875C5.5 17.5654 6.05964 18.125 6.75 18.125Z" fill="white"/>
                                 <path d="M14.875 18.125C15.5654 18.125 16.125 17.5654 16.125 16.875C16.125 16.1846 15.5654 15.625 14.875 15.625C14.1846 15.625 13.625 16.1846 13.625 16.875C13.625 17.5654 14.1846 18.125 14.875 18.125Z" fill="white"/>
@@ -1260,8 +1260,8 @@
                             <span>Добавить в корзину</span>
                         </div>
                         <div class="alcohol__promo">
-                            <form class="" action="">
-                                <input placeholder="Введите ваш промокод" type="text">
+                            <form class="alcohol__promo-form" action="">
+                                <input class="alcohol__promo-input" placeholder="Введите ваш промокод" type="text">
                                 <button class="alcohol__promo-button">
                                     <svg class="alcohol-button_normal" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.125 10H16.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1531,7 +1531,7 @@
                 </div>
             </div>
         </section>
-        <section class="recommend">
+        <section class="recommend recommend-product">
             <div class="container">
                 <h1>Мы рекомендуем</h1>
                 <div class="recommend__slider">
@@ -2049,6 +2049,7 @@
                 </div>
             </div>
         </section>
+        <div class="main_background active"></div>
     </div>
 <footer class="footer">
     <div class="container">
@@ -2443,9 +2444,9 @@
             <h4>Вход</h4>
             <p>Для входа введите свой номер телефона</p>
             <form action="">
-                <input class="log-phone phone_mask" type="text" placeholder="Телефон">
-                <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                <input class="log-phone phone_mask log-first-tel" type="text" placeholder="Телефон">
+                <div class="log__password-wrapper password-wrapper">
+                    <input type="password" class="password log-password log-first-password" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2459,7 +2460,7 @@
                     </svg>
                 </div>
                 <span class="log-forget log-enter-forget-first">Забыли пароль?</span>
-                <button class="log-enter log-button-disabled log-done">Войти в аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-first-button">Войти в аккаунт</button>
                 <button class="log-enter-email log-enter-another">Вход по Email</button>
             </form>
         </div>
@@ -2497,9 +2498,9 @@
             <h4>Вход</h4>
             <p>Для входа введите свою почту</p>
             <form action="">
-                <input class="log-email" type="text" placeholder="Почта">
+                <input class="log-email log-email-email" type="text" placeholder="Почта">
                 <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                    <input type="password" class="password log-password log-email-password" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2513,7 +2514,7 @@
                     </svg>
                 </div>
                 <span class="log-forget log-enter-forget-first">Забыли пароль?</span>
-                <button class="log-enter log-button-disabled log-done">Войти в аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-email-button">Войти в аккаунт</button>
                 <button class="log-enter-tel log-enter-another">Вход по телефону</button>
             </form>
         </div>
@@ -2551,9 +2552,9 @@
             <h4>Вход</h4>
             <p>Введите номер телефона / почту, куда мы отправим пароль для входа в аккаунт</p>
             <form action="">
-                <input class="log-phone-email" type="text" placeholder="Телефон / почта">
+                <input class="log-phone-email log-forget-phone" type="text" placeholder="Телефон / почта">
                 <span class="log-forget log-recall">Вспомнили пароль?</span>
-                <button class="log-enter log-enter-forget-second log-button-disabled">Получить пароль</button>
+                <button class="log-enter log-enter-forget-second log-button-disabled log-forget-button">Получить пароль</button>
             </form>
         </div>
         <div class="log__bottom">
@@ -2594,7 +2595,7 @@
             </div>
             <form action="">
                 <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                    <input type="password" class="password log-password log-forget-password-second" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2608,7 +2609,7 @@
                     </svg>
                 </div>
                 <span class="log-forget log-enter-forget-first">Неверный номер телефона / почта?</span>
-                <button class="log-enter log-button-disabled log-done">Войти в аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-forget-button-second">Войти в аккаунт</button>
             </form>
         </div>
         <div class="log__bottom">
@@ -2644,10 +2645,10 @@
         <div class="log__top">
             <h4>Регистрация аккаунта</h4>
             <form action="">
-                <input class="log-phone log-name" type="text" placeholder="Ваше имя">
-                <input class="log-phone phone_mask" type="text" placeholder="Телефон">
-                <input class="log-phone log-email" type="text" placeholder="Почта">
-                <button class="log-enter log-enter-register-second log-button-disabled">Создать пароль</button>
+                <input class="log-phone log-name log-register-name" type="text" placeholder="Ваше имя">
+                <input class="log-phone phone_mask log-register-phone" type="text" placeholder="Телефон">
+                <input class="log-phone log-email log-register-email" type="text" placeholder="Почта">
+                <button class="log-enter log-enter-register-second log-button-disabled log-register-button">Создать пароль</button>
             </form>
         </div>
         <div class="log__bottom">
@@ -2685,7 +2686,7 @@
             <p>Придумайте пароль, который вмещает от 4 до 8 символов</p>
             <form action="">
                 <div class="log__password-wrapper password-wrapper ">
-                    <input type="password" class="password log-password" placeholder="Пароль">
+                    <input type="password" class="password log-password log-register-password-second" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2699,7 +2700,7 @@
                     </svg>
                 </div>
                 <div class="log__password-wrapper log__password-repeat-wrapper password-wrapper ">
-                    <input type="password" class="password log-password log-password-repeat" placeholder="Пароль">
+                    <input type="password" class="password log-password log-password-repeat log-register-repeat" placeholder="Пароль">
                     <svg class="password-hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.125 3.4375L17.875 18.5625" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3121 13.5442C12.6375 14.1573 11.747 14.4774 10.8364 14.434C9.92577 14.3906 9.0697 13.9873 8.45647 13.3127C7.84323 12.6382 7.52307 11.7476 7.56639 10.837C7.60971 9.92643 8.01297 9.07032 8.68747 8.45703" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2712,7 +2713,7 @@
                         <path d="M11 14.4375C12.8985 14.4375 14.4375 12.8985 14.4375 11C14.4375 9.10152 12.8985 7.5625 11 7.5625C9.10152 7.5625 7.5625 9.10152 7.5625 11C7.5625 12.8985 9.10152 14.4375 11 14.4375Z" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <button class="log-enter log-button-disabled log-done">Создать аккаунт</button>
+                <button class="log-enter log-button-disabled log-done log-register-button-second">Создать аккаунт</button>
                 <div class="log__checkbox">
                     <div class="log__mark">
                         <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
