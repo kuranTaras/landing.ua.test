@@ -508,9 +508,9 @@ $(window).on("load" , function () {
         $(this).on('click', () => {
             $('.search__filter-checkboxes').eq(index).toggleClass('search-checkboxes_active')
             if($('.search__filter-checkboxes').eq(index).hasClass('search-checkboxes_active')) {
-                $('.search__change-text').eq(index).text('Скрыть')
+                $('.search__change-text').eq(index).text($('.search__change-text').eq(index).attr('data-less'))
             } else{
-                $('.search__change-text').eq(index).text('Смотреть все')
+                $('.search__change-text').eq(index).text($('.search__change-text').eq(index).attr('data-more'))
             }
         })
     })
@@ -618,15 +618,15 @@ $(window).on("load" , function () {
 
 
     if ($(window).width() < 1009 ) {
-        $('.cabinet-h1').text('Личные данные')
+        $('.cabinet-h1').text($('.cabinet-h1').attr('data-private-dates'))
         $('.cabinet-tab-dates').on('click', () => {
-            $('.cabinet-h1').text('Личные данные')
+            $('.cabinet-h1').text($('.cabinet-h1').attr('data-private-dates'))
         })
         $('.cabinet-tab-orders').on('click', () => {
-            $('.cabinet-h1').text('Мои заказы')
+            $('.cabinet-h1').text($('.cabinet-h1').attr('data-favourites'))
         })
         $('.cabinet-tab-favourite').on('click', () => {
-            $('.cabinet-h1').text('Избраное')
+            $('.cabinet-h1').text($('.cabinet-h1').attr('data-orders'))
         })
     }
     $('.password-visible').each(function (index) {
@@ -917,25 +917,36 @@ $(window).on("load" , function () {
     $('.alcohol__add').on('click', () => {
         $('.alcohol__add').addClass('alcohol__add-success')
     })
-    $(window).on('scroll', () => {
-        if ($(window).scrollTop() > $('.text__about').offset().top - 100) {
-            $('.text__anchor').each(function () {
-                $(this).removeClass('text__anchor_active')
-            })
-            $('.text__anchor').eq(0).addClass('text__anchor_active')
+    if ($('.text__anchor').length) {
+        $(window).on('scroll', () => {
+            if ($(window).scrollTop() > $('.text__about').offset().top - 100) {
+                $('.text__anchor').each(function () {
+                    $(this).removeClass('text__anchor_active')
+                })
+                $('.text__anchor').eq(0).addClass('text__anchor_active')
+            }
+            if ($(window).scrollTop() > $('.text__delivery').offset().top - 100) {
+                $('.text__anchor').each(function () {
+                    $(this).removeClass('text__anchor_active')
+                })
+                $('.text__anchor').eq(1).addClass('text__anchor_active')
+            }
+            if ($(window).scrollTop() > $('.text__return').offset().top - 300) {
+                $('.text__anchor').each(function () {
+                    $(this).removeClass('text__anchor_active')
+                })
+                $('.text__anchor').eq(2).addClass('text__anchor_active')
+            }
+        })
+    }
+    $('.seo__more').on('click', () => {
+        $('.seo__text').toggleClass('seo__text_active')
+        if ($('.seo__text').hasClass('seo__text_active')) {
+            $('.seo__more span').text($('.seo__more').attr('data-less'))
+        } else {
+            $('.seo__more span').text($('.seo__more').attr('data-more'))
         }
-        if ($(window).scrollTop() > $('.text__delivery').offset().top - 100) {
-            $('.text__anchor').each(function () {
-                $(this).removeClass('text__anchor_active')
-            })
-            $('.text__anchor').eq(1).addClass('text__anchor_active')
-        }
-        if ($(window).scrollTop() > $('.text__return').offset().top - 300) {
-            $('.text__anchor').each(function () {
-                $(this).removeClass('text__anchor_active')
-            })
-            $('.text__anchor').eq(2).addClass('text__anchor_active')
-        }
+
     })
 })
 
